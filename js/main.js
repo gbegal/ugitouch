@@ -150,7 +150,7 @@ var app = {
 
 function getContacts()
 {
-	    console.log('i m in getContacts');
+	    console.log('i m in getContacts'+ navigator.contacts);
 	    var options = new ContactFindOptions();    
         options.filter   = "";
         options.multiple = true;
