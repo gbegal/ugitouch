@@ -110,7 +110,7 @@ var app = {
 		
 		//$(".wrapper").css( { 'min-height': $(window).height() }, { queue: false, duration: 800 });
 		
-		//getContacts();
+		getContacts();
 		
 		//getLocation();
 		
@@ -150,6 +150,7 @@ var app = {
 
 function getContacts()
 {
+	    console.log('i m in getContacts');
 	    var options = new ContactFindOptions();    
         options.filter   = "";
         options.multiple = true;
