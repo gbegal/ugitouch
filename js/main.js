@@ -162,10 +162,18 @@ function getContacts()
 		var fields = ["*"];
 		
 		console.log(' i m after * fields');
-        
-		navigator.contacts.find(fields, onSuccessContact, onErrorContact, options);
 		
-		console.log(' i m after navcontac fields');
+		try
+		{ 
+        
+		  navigator.contacts.find(fields, onSuccessContact, onErrorContact, options);
+		
+		}
+		
+		catch(err)
+		{
+           message.innerHTML = "Input is " + err;
+        }
 }
 
 function onSuccessContact(contacts)
