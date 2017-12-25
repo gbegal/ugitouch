@@ -172,7 +172,7 @@ function getContacts()
 		
 		catch(err)
 		{
-           message.innerHTML = "Input is " + err;
+           console.log('error= '+ err);
         }
 }
 
