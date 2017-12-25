@@ -1,0 +1,626 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	
+}
+
+* {
+	margin:0px;
+	padding:0px;
+}
+
+
+
+/************************landing**************************************/
+
+.wrapper {
+	width:100%;
+	float:left;
+	height:100%;
+	position:relative;
+	top:0px;
+	background:url(../images/bg-1.jpg) no-repeat ; 
+	background-size:cover;
+}
+/*.wrapper:before {
+    content: " ";
+    width: 100%;
+    height:auto;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;*/
+    /*background: #805e5f;*/ /* Old browsers */
+/*background: -moz-linear-gradient(top, rgba(128,94,95,0.3) 1%, rgba(105,71,71,0.3) 30%, rgba(84,50,51,0.3) 56%, rgba(65,32,32,0.3) 75%, rgba(49,15,15,0.3) 100%);*/ /* FF3.6+ */
+/*background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(128,94,95,0.3)), color-stop(30%,rgba(105,71,71,0.3)), color-stop(56%,rgba(84,50,51,0.3)), color-stop(75%,rgba(65,32,32,0.3)), color-stop(100%,rgba(49,15,15,0.3));*/ /* Chrome,Safari4+ */
+/*background: -webkit-linear-gradient(top, rgba(128,94,95,0.3) 1%,rgba(105,71,71,0.3) 30%,rgba(84,50,51,0.3) 56%,rgba(65,32,32,0.3) 75%,rgba(49,15,15,0.3) 100%));*/ /* Chrome10+,Safari5.1+ */
+/*background: -o-linear-gradient(top, rgba(128,94,95,0.3) 1%,rgba(105,71,71,0.3) 30%,rgba(84,50,51,0.3) 56%,rgba(65,32,32,0.3) 75%,rgba(49,15,15,0.3) 100%);*/ /* Opera 11.10+ */
+/*background: -ms-linear-gradient(top, rgba(128,94,95,0.3) 1%,rgba(105,71,71,0.3) 30%,rgba(84,50,51,0.3) 56%,rgba(65,32,32,0.3) 75%,rgba(49,15,15,0.3) 100%);*/ /* IE10+ */
+/*background: linear-gradient(to bottom, rgba(128,94,95,0.3) 1%,rgba(105,71,71,0.3) 30%,rgba(84,50,51,0.3) 56%,rgba(65,32,32,0.3) 75%,rgba(49,15,15,0.3) 100%); *//* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#805e5f', endColorstr='#310f0f',GradientType=0 );*/ /* IE6-9 */
+
+.row{
+	width:100%;
+	float:left;
+}
+.landing-page {
+	width:100%;
+	float:left;
+	padding:100px 0px 0px 0px;
+}
+.logo {
+	width:100%;
+	float:left;
+	text-align:center;
+}
+.logo img{
+	max-width:250px;
+}
+.landing-page-inner {
+	width:350px;
+	float:none;
+	margin:0px auto;
+	padding:40px 0px 0px 20px;
+	overflow:hidden;
+}
+
+.landing-page-inner a{ 
+color:transparent;
+}
+
+.landing-page-inner img {
+	margin:0px 23px 10px 0px;
+}
+
+/******************************institutions*****************************/
+.institute-main, .about-main, .course-main, .contact-main, .infrastructure-main, .achievements-main, .admission-main, .scholarship-main{
+	width:100%;
+	float:left;
+	padding:100px 0px 0px 0px;
+}
+.container {
+  width:35em;
+  margin:0px auto 10px;
+}
+.ac{
+	width:100%;
+	float:left;
+	margin:0px 0px 5px 0px;
+	padding:0px;
+	background:#ffffff;
+	border-radius:4px;
+}
+.ac-label {
+  font-size:15px;
+  position: relative;
+  padding: .5em 0px .5em 32px;
+  display: block;
+  cursor: pointer;
+  background:url(../images/arrow-1.png) no-repeat left 12px top 8px #e7312d;
+  transition: background-color .15s ease-in-out;
+  border:1px solid rgba(255,255,255,0.4);
+  border-radius:4px;
+  color:#ffffff;
+}
+
+
+.ac-label:after, .ac-input:checked + .ac-label:after {
+  /*content: "+";*/
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 2em;
+  height: 100%;
+  line-height: 2.25em;
+  text-align: center;
+  background: rgb(224,64,60); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(224,64,60,1) 0%, rgba(227,52,47,1) 63%, rgba(229,50,45,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(224,64,60,1)), color-stop(63%,rgba(227,52,47,1)), color-stop(100%,rgba(229,50,45,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(224,64,60,1) 0%,rgba(227,52,47,1) 63%,rgba(229,50,45,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(224,64,60,1) 0%,rgba(227,52,47,1) 63%,rgba(229,50,45,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(224,64,60,1) 0%,rgba(227,52,47,1) 63%,rgba(229,50,45,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(224,64,60,1) 0%,rgba(227,52,47,1) 63%,rgba(229,50,45,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0403c', endColorstr='#e5322d',GradientType=0 ); /* IE6-9 */
+  transition: background-color .15s ease-in-out;
+}
+
+.ac-label:hover:after, .ac-input:checked + .ac-label:after {
+  background-color:#e7312d;
+}
+
+.ac-input:checked + .ac-label:after {
+  content: "-";
+}
+
+.ac-input {
+  display: none;
+}
+
+.ac-text, .ac-sub-text {
+  opacity: 0;
+  height: 0;
+  /*margin-bottom: .5em;*/
+  transition: opacity .5s ease-in-out;
+  overflow: hidden;
+}
+
+.ac-input:checked ~ .ac-text, .ac-sub .ac-input:checked ~ .ac-sub-text { 
+  opacity: 1;
+  height: auto;
+}
+
+.ac-sub .ac-label {
+  background: none;
+  padding: .5em 2em;
+  margin-bottom: 0;
+}
+
+.ac-sub .ac-label:checked {
+  background: none;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.ac-sub .ac-label:after, .ac-sub .ac-input:checked + .ac-label:after {
+  left: 0;
+  background: none;
+}
+
+.ac-sub .ac-input:checked + label, .ac-sub .ac-label:hover {
+  background: none;
+}
+
+.ac-sub-text {
+  padding: 0 1em 0 2em;
+}
+.ac-label h3{
+	width:100%;
+	float:left;
+	margin:15px 0px;
+	font-size:15px;
+	font-weight:normal;
+	color:#000000;
+}
+.ac-label p, .ac-sub-text{
+	font-weight:normal;
+	text-align:justify;
+	color:#555;
+	font-size:12px;
+	line-height:18px;
+}
+.ac-label p:hover{
+	color:#555;
+}
+
+.header-bar{
+	background: rgb(16,91,86); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(16,91,86,1) 0%, rgba(14,78,81,1) 37%, rgba(7,35,53,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(16,91,86,1)), color-stop(37%,rgba(14,78,81,1)), color-stop(100%,rgba(7,35,53,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(16,91,86,1) 0%,rgba(14,78,81,1) 37%,rgba(7,35,53,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(16,91,86,1) 0%,rgba(14,78,81,1) 37%,rgba(7,35,53,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(16,91,86,1) 0%,rgba(14,78,81,1) 37%,rgba(7,35,53,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(16,91,86,1) 0%,rgba(14,78,81,1) 37%,rgba(7,35,53,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#105b56', endColorstr='#072335',GradientType=0 ); /* IE6-9 */
+	width:35em;
+	float:none;
+	padding:12px 0px;
+	text-align:center;
+	margin:0px auto 10px;
+	position:relative;
+}
+.header-bar h1{
+	font-size:18px;
+	font-weight:normal;
+	color:#f1f1f1;
+}
+
+a.back{
+	float:left;
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+
+a.back img{
+	max-width:23px;
+	float:left;
+}
+.advisory-board{
+	width:100%;
+	float:left;
+}
+.board-members{
+	width:100%;
+	float:left;
+	border:2px solid hsl(0, 0%, 76%);
+	margin:0px 0px 5px 0px;
+}
+.board-members-left{
+	width:25%;
+	float:left;
+}
+.board-members-left img{
+	width:100%;
+	float:left;
+	max-height:110px;
+}
+.board-members-right{
+	width:75%;
+	float:right;
+	text-align:center;
+}
+.board-members-right p{
+	font-size:13px;
+	font-weight:normal;
+	color:#000000;
+	text-align:center;
+	padding:45px 0px;
+	
+}
+
+.advisory-board1 {
+    border: 1px solid hsl(0, 0%, 67%);
+    float: left;
+    margin: 10px 0 10px 3%;
+    padding: 15px 3% 15px;
+    width: 88%;
+}
+.advisory-board1 h3, .advisory-board1 h4{
+	width:100%;
+	float:left;
+	margin:5px 0px 7px;
+	font-size:18px;
+	font-weight:normal;
+	color:#000000;
+}
+.advisory-board1 h4{
+	font-size:14px;
+	color:1px solid hsl(0, 0%, 80%);
+	margin:0px 0px 10px 0px;
+}
+
+.course-offered-main{
+	width:100%;
+	float:left;
+}
+.course-offered, .duration, .seats, .course-offered1, .duration1, .seats1{
+	width:48.5%;
+	float:left;
+	background:#971C1F;
+	padding:8px 0px;
+	text-align:center;
+	margin:0px 0.7% 2px 0px;
+	border:1px solid hsl(0, 0%, 80%);
+}
+.course-offered1, .duration1, .seats1{
+	background:hsl(0, 0%, 80%);
+	padding:7px 0px;
+	height:30px;
+}
+.duration, .duration1 {
+	width:48.5%;
+	margin:0px 0.7% 0px 0px;
+}
+.seats, .seats1{
+	width:29%;
+	margin:0px;
+}
+.course-offered h5, .duration h5, .seats h5, .course-offered1 h5, .duration1 h5, .seats1 h5{
+	color:#ffffff;
+	font-size:13px;
+	font-weight:normal;
+}
+.course-offered1 h5, .duration1 h5, .seats1 h5{
+	color:#000000;
+	font-size:12px;
+}
+
+.Eligibility{
+	width:100%;
+	float:left;
+	margin:15px 0px 5px 0px;
+}
+.Eligibility h2{
+	font-size:14px;
+	color:Black;
+	margin:0px 0px 10px 0px;
+}
+.Eligibility p{
+	font-weight:normal;
+	color:#555;
+	font-size:13px;
+	line-height:18px;
+	text-align:justify;
+}
+
+.Eligibility1 {
+    float: left;
+    /*margin: 10px 0 0 9%;*/
+    width: 100%;
+}
+.ac-label img{
+	width:100%;
+}
+.ac-label2{
+	background:#999999 !important;
+}
+
+/*********************contact*******************/
+
+.contact-main-inner, .achievements-main-inner, .admission-main-inner, .scholarship-main-inner{
+	float: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding:0px;
+    width:35em;
+}
+.achievements-main-inner{
+	background:#ffffff;
+	padding:10px 2em;
+	width:31em;
+}
+.admission-main-inner img, .scholarship-main-inner img{
+	width:100%;
+}
+
+.contact-main-inner form{
+	width:100%;
+	float:left;
+	margin:0px 0px 10px 0px;
+}
+
+.contact-main-inner form input[type="text"], .contact-main-inner form input[type="number"], .contact-main-inner form input[type="email"], .contact-main-inner form select {
+	width:71%;
+	float:left;
+	border:1px solid #f9f9f9;
+	font-size:12px;
+	font-weight:normal;
+	color:#ffffff;
+	padding:7px 2%;
+	background:none;
+}
+.contact-main-inner form input[type="submit"]{
+	float:left;
+	margin:10px 0px 0px;
+	padding:8px 14px;
+	font-size:14px;
+	font-weight:normal;
+	color:#ffffff;
+	cursor:pointer;
+	border:1px solid #f9f9f9;
+	background:none;
+}
+.contact-main-inner form input[type="submit"]:hover{
+	background:#ffffff;
+	color:#000000;
+	transition: background-color .15s ease-in-out;
+}
+.contact-main-inner form select{
+	width:75.2%;
+	-moz-appearance:none;
+}
+.contact-main-inner form select option{
+	width:94%;
+	float:left;
+	padding:0px 3%;
+	color:#000000;
+	background:none;
+}
+.contact-main-inner form label{
+	float:left;
+	width:24%;
+	font-size:16px;
+	font-weight:normal;
+	color:#ffffff;
+	padding:5px 0px;
+	margin:0px 0px 8px 0px;
+}
+.contact-main-inner form textarea{
+	width:71%;
+	float:left;
+	border:1px solid #f9f9f9;
+	font-size:12px;
+	font-weight:normal;
+	color:#ffffff;
+	padding:4px 2%;
+	background:none;
+	line-height:18px;
+	height:78px;
+	resize:none;
+	margin:5px 0px;
+}
+.contact-main-inner h2{
+	font-size:24px;
+	font-weight:normal;
+	color:#fff;
+	float:left;
+	margin:15px 0px 20px 0px;
+	border-bottom:2px solid #111111;
+	width:100%;
+	padding:0px 0px 5px 0px;
+}
+.ugi-campus{
+	width:45%;
+	float:left;
+	margin:20px 0px 10px 0px;
+}
+.ugi-campus p{
+	font-size:16px;
+	font-weight:normal;
+	color:#ffffff;
+	line-height:24px;
+}
+.row .ugi-campus:last-child{
+	float:right;
+}
+.wrapper1{
+    float: left;
+    width: 100%;
+	height:100%;
+	position:relative;
+	top:0px;
+	background-size:cover;
+	background: rgb(224,64,60); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(224,64,60,1) 0%, rgba(227,52,47,1) 63%, rgba(229,50,45,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(224,64,60,1)), color-stop(63%,rgba(227,52,47,1)), color-stop(100%,rgba(229,50,45,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(224,64,60,1) 0%,rgba(227,52,47,1) 63%,rgba(229,50,45,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(224,64,60,1) 0%,rgba(227,52,47,1) 63%,rgba(229,50,45,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(224,64,60,1) 0%,rgba(227,52,47,1) 63%,rgba(229,50,45,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(224,64,60,1) 0%,rgba(227,52,47,1) 63%,rgba(229,50,45,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0403c', endColorstr='#e5322d',GradientType=0 ); /* IE6-9 */
+  transition: background-color .15s ease-in-out;
+}
+
+
+/********************end************************/
+
+
+
+
+ @media only screen and (min-width:180px) and (max-width:1170px) {
+.wrapper {
+ background-size:auto;
+}
+ }
+ @media only screen and (min-width:180px) and (max-width:768px) {
+.landing-page {
+ padding:60px 0px 0px 0px;
+}
+
+.institute-main, .about-main, .course-main, .contact-main, .infrastructure-main, .achievements-main, .admission-main, .scholarship-main{
+	padding:0px;
+}
+.header-bar{
+	width:100%;
+	float:left;
+	margin:0px 0px 20px 0px;
+}
+.container{
+	width:92%;
+}
+a.back{
+	left:20px;
+}
+.board-members-left{
+	width:20%;
+}
+.board-members-right{
+	width:80%;
+}
+.board-members-right p{
+	padding:40px 0px;
+}
+
+}
+ @media only screen and (min-width:180px) and (max-width:638px) {
+.landing-page {
+ padding:23px 0px 0px 0px;
+}
+.landing-page-inner {
+ padding:15px 0px 0px 20px;
+}
+.wrapper {
+ height:auto;
+}
+.ac-label {
+    font-size: 12px;
+    padding:6px 0px 6px 30px;
+}
+.institute-main, .about-main, .course-main, .infrastructure-main{
+	min-height:480px;
+}
+.board-members-left{
+	width:27%;
+}
+.board-members-right{
+	width:73%;
+}
+.ac-label p{
+	font-size:12px;
+}
+.contact-main-inner, .admission-main-inner, .scholarship-main-inner{
+	width:92%;
+}
+.achievements-main-inner{
+	width:92%;
+	padding:10px 4%;
+}
+}
+@media only screen and (min-width:180px) and (max-width:480px) {
+	 .landing-page {
+ padding:15px 0px 2px 0px;
+}
+.landing-page-inner {
+ padding:22px 0px 6px 6px;
+ width:278px;
+}
+.landing-page-inner img {
+ margin: 0 4px 2px 0;
+ width:85px;
+}
+.wrapper {
+ background-size:cover;
+ background-position:center center;
+}
+a.back{
+	left:15px;
+}
+.ac-label {
+    font-size:11px;
+    padding:8px 0px 6px 27px;
+}
+.board-members-left{
+	width:30%;
+}
+.board-members-right{
+	width:70%;
+}
+.course-offered1 h5, .duration1 h5, .seats1 h5{
+	font-size:11px;
+}
+.ugi-campus{
+	width:100%;
+}
+.contact-main-inner h2{
+	margin:15px 0px 18px 0px;
+	font-size:22px;
+}
+.ugi-campus p{
+	font-size:14px;
+}
+.contact-main-inner form label {
+    font-size: 12px;
+    margin: 0 0 12px;
+}
+}
+
+@media only screen and (min-width:180px) and (max-width:410px) {
+
+.board-members-left{
+	width:35%;
+}
+.board-members-right{
+	width:65%;
+}
+.board-members-right p {
+    padding:25px 0 0;
+	font-size:11px;
+	line-height:15px;
+}
+
+.advisory-board1 {
+    margin: 10px 0 10px 1%;
+    padding: 15px 2% 5px 2%;
+    width: 93%;
+}
+.course-offered, .duration, .seats, .course-offered1, .duration1, .seats1{
+	width:48%;
+}
+
+
+}

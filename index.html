@@ -1,0 +1,3677 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>UGI App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<!--script src="http://192.168.225.92:8080/target/target-script-min.js#anonymous"></script-->
+
+
+
+
+<!--meta name="viewport" content="user-scalable=no" /-->
+
+<!--link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<!--link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/demo.css"-->
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<link href="fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css">
+
+<!---SweetAlert-->
+<!--link rel="stylesheet" href="css/sweetalert2.min.css"-->
+
+</head>
+<body class="cbp-spmenu-push">
+   <script id="login-tpl" type="text/x-handlebars-template">   
+     <div class="wrapper">
+  <div class="landing-page">
+    <div class="logo"> <img src="images/logo.png"> </div>
+    <div class="landing-page-inner"> 
+	<a href="javascript:void(0);" id="about">
+	  <img src="images/about.png">
+	</a>
+	<a href="javascript:void(0);" id="institute">
+	  <img src="images/institute.png">
+	</a>
+	<a href="javascript:void(0);" id="courses">
+	  <img src="images/course.png">
+	</a>
+	<a href="javascript:void(0);" id="admission"><img src="images/ranking.png"></a>
+	
+	<a href="javascript:void(0);" id="placement">
+	  <img src="images/placements.png">
+	</a>
+	<a href="javascript:void(0);" id="prospectus">
+	  <img src="images/prospectus.png">
+	</a>
+	<!--a href="javascript:void(0);" id="achievements">
+	  <img src="images/achievement.png">
+	</a-->
+	<a href="javascript:void(0);" id="infra">
+	  <img src="images/infra.png">
+	</a>
+	<a href="javascript:void(0);" id="scholarship">
+	  <img src="images/scholerships.png">
+	</a>
+	<a href="javascript:void(0);" id="contact">
+	  <img src="images/contact.png"/>
+	</a>
+	
+	<!--a href="javascript:void(0);" id="enquiry">
+	 <img src="images/enquiry.png">
+	</a-->
+	
+	<a href="javascript:void(0);" id="student_login">
+      <img src="images/login.png">
+    </a>
+	
+	<!--a href="javascript:void(0);" id="quiz">
+      <img src="images/quiz.png">
+    </a-->
+	
+	<a href="javascript:void(0);" id="uniqe_ugi">
+      <img src="images/unique_ugi.png">
+    </a>
+	
+	<a href="javascript:void(0);" id="events">
+      <img src="images/events.png">
+    </a>
+	
+	<a href="javascript:void(0);" id="gallery">
+      <img src="images/gallery.png">
+    </a>
+	
+	<a href="javascript:void(0);" id="video_gallery">
+      <img src="images/video_gallery.png">
+    </a>
+	
+    <a href="javascript:openBrowser();">
+      <img src="images/academics.png">
+    </a>
+	
+    
+	</div>
+  </div>
+</div>
+</div>
+
+   </script> 
+   
+   
+   
+	<script id="login-with-otp-tpl" type="text/x-handlebars-template">  
+	
+	   <div class="wrapper">
+     <div class="contact-main">
+	 
+     <br/><br/><br/><br/><br/><br/><br/>
+
+<div class="logo"> <img src="images/logo.png"> </div>
+     
+     <div class="contact-main-inner">
+       
+     <div id="enter_mobile">	 
+	 
+     <h2 style="text-align:center;">Enter Mobile No. To Login</h2>
+
+	 <form id="prospectus_form">
+
+<div class="row"><label>Mobile No:</label><input type="text" value="" id="phone_no" placeholder="Ex: 9812434386"></div>
+<div class="row"><label></label><input type="submit" value="Login" id="login-with-otp-btn"></div>
+</form>
+
+</div>
+   
+   
+   <div id="enter_otp" style="display:none;">
+   
+   <h2 style="text-align:center;">Enter OTP!!</h2>
+
+	 <form id="prospectus_form">
+
+<div class="row"><label>Enter OTP:</label><input type="text" value="" id="otp_data" placeholder="Enter Your 6 Digit OTP!!"></div>
+<div class="row"><label></label><input type="submit" value="Submit" id="check_otp"></div>
+</form>
+   </div>
+
+     </div>
+     </div>
+	 </div>
+	
+	</script>
+	
+	
+<script id="gallery-tpl" type="text/x-handlebars-template">  
+	
+	   <div class="wrapper1">
+     <div class="contact-main">
+     <div class="header-bar">
+<h1>UGI Gallery</h1>
+<a class="back" href="#">
+<img src="images/back.png">
+</a>
+</div>
+     
+     <div class="contact-main-inner">
+       
+     <!--h2 style="text-align:center;color:white;">Tap on Image Below to Enlarge</h2-->
+	 
+	 <div class="row">
+	  
+	   <h2 style="text-align:center;color:white;">Punjabi Virsa Cultural Event</h2>
+	   <a href="images/gallery/virsa.jpg" data-fancybox="group" data-caption="Punjabi Virsa Cultural Event">
+	    <img src="images/gallery/virsa.jpg" alt=""/>
+       </a>
+	   
+	   
+	   
+	   <br/><br/>
+       <h2 style="text-align:center;color:white;">Celebration of Law Day</h2>
+       <a href="images/gallery/lawcel.jpg" data-fancybox="group" data-caption="Celebration of Law Day">
+	    <img src="images/gallery/lawcel.jpg" alt=""/>
+       </a>
+	   
+	   <br/><br/>
+	   
+	   <h2 style="text-align:center;color:white;">Foreign Delegates Visited UGI</h2>
+	   <a href="images/gallery/foreigndelegates.jpg" data-fancybox="group" data-caption="Foreign Delegates Visited UGI">
+	    <img src="images/gallery/foreigndelegates.jpg" alt=""/>
+       </a>
+	   
+	   <br/><br/>
+	   
+	   <h2 style="text-align:center;color:white;">Euphoria 2017</h2>
+	   <a href="images/gallery/eu17.jpg" data-fancybox="group" data-caption="Euphoria 2017">
+	    <img src="images/gallery/eu17.jpg" alt=""/>
+       </a>
+	   
+	  
+	  
+	 </div>
+
+     </div>
+     </div>
+	 </div>
+	
+	</script>
+   
+   
+   <script id="video-gallery-tpl" type="text/x-handlebars-template">  
+	
+	   <div class="wrapper1">
+	   
+     <div class="contact-main">
+     <div class="header-bar">
+<h1>UGI Video Gallery</h1>
+<a class="back" href="#">
+<img src="images/back.png">
+</a>
+</div>
+
+     
+     <div class="contact-main-inner">
+	 
+	 <div id="loadingMessage" style="text-align:center;"><img src="images/gallery/loader.gif" width="200"/></div>
+	 
+	 <div class="row">
+	 
+	  <div id="ugi_videos" style="display:none;">
+	  
+	   <iframe src="https://www.youtube.com/embed/V3vb16DD-zA?rel=0" frameborder="0" allowfullscreen></iframe><br/><br/>
+	 
+	   <iframe src="https://www.youtube.com/embed/NIlJOZiJzA0?rel=0" frameborder="0" allowfullscreen></iframe><br/><br/>
+	   
+	   <iframe id="first_video" src="https://www.youtube.com/embed/wUIYxFDwIG4?rel=0" frameborder="0" allowfullscreen></iframe><br/><br/>
+	   
+	   <iframe src="https://www.youtube.com/embed/5SJpCeA9wk0?rel=0" frameborder="0" allowfullscreen></iframe>
+	  
+	 </div>
+	 
+	 </div>
+
+     </div>
+     </div>
+	 </div>
+	
+	</script>
+	
+	
+	   <script id="uniqe-ugi-tpl" type="text/x-handlebars-template">   
+     <div class="wrapper">
+  
+  <div class="about-main">
+<div class="header-bar">
+<h1>Unique@UGI</h1>
+<a class="back" href="#">
+<img src="images/back.png">
+</a>
+</div>
+
+    <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-1" name="ac-1" type="checkbox" />
+      <label class="ac-label" for="ac-1">Google Signed a MoU with UGI</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-2" name="ac-2" type="checkbox" />
+          <article class="ac-label">
+		    <img src="images/google.png">
+            <p>UGI become the partner with Google for Education Programme to provide service and innovate by leveraging Google products and platform across the Google for Education suite. Now UGI is a fundamental part of the Google for Education mission – to help teachers inspire curiosity and for students to discover and learn together. UGI started Google Classroom "Less paperwork more Teaching" with the mission to control for class. Google Classroom is one of the fine tools, with the help of this we create classes, distribute assignments, send feedback, and see everything in one place. In the outcome of this product, a teacher and students get instant and effective results with easy and paperless teaching.</p>
+          </article>
+        </div>
+        
+      </article>
+      
+      
+    </div>
+		
+		</section>
+		
+		
+		<section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-112" name="ac-112" type="checkbox" />
+      <label class="ac-label" for="ac-112">Microsoft Imagine Academy</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-222" name="ac-222" type="checkbox" />
+          <article class="ac-label">
+		    <img src="images/microsoft-imagine-academy.png">
+            <p>Microsoft has signed a MoU with Universal Group of Institutions (UGI) for Microsoft Imagine Academy program. The Microsoft Imagine Academy Program is designed for accredited academic institutions worldwide. The Program prepare students for the global economy, and create skilled community. It provides educators the tools they need to effectively train students on Microsoft technologies.</p>
+          </article>
+        </div>
+        
+      </article>
+      
+      
+    </div>
+		
+		</section>
+		
+		
+		
+		<section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-1123" name="ac-1123" type="checkbox" />
+      <label class="ac-label" for="ac-1123">Autodesk Design & Engineering Club</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-2223" name="ac-2223" type="checkbox" />
+          <article class="ac-label">
+		    <img src="images/autodesk.jpg">
+            <p>UNIVERSAL GROUP established Authorised Autodesk Design and Engineering Club in 2015. Autodesk, Inc. is an American multinational software corporation that focuses on 3D design software for use in the architecture, engineering, construction, manufacturing, media and entertainment industries. Autodesk became best known for AutoCAD but now develops a broad range of software for design and engineering. The first batch, taught by Autodesk certified faculty completed its training and qualified their Autodesk certification in October 2015.</p>
+          </article>
+        </div>
+        
+      </article>
+      
+      
+    </div>
+		
+		</section>
+		
+		
+		
+		<section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-1124" name="ac-1124" type="checkbox" />
+      <label class="ac-label" for="ac-1124">Godrej Workshop</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-2224" name="ac-2224" type="checkbox" />
+          <article class="ac-label">
+		    <img src="images/godrej.png">
+            <p>Universal Group of Institutions (UGI) has tied up with Godrej to open a workshop for Diploma and B.tech (Mechanical and Electrical engineering) students. The workshop makes students professionally trained in the field of refrigeration and air conditioning. The students of other colleges can also impart the training.</p>
+          </article>
+        </div>
+        
+      </article>
+      
+      
+    </div>
+		
+		</section>
+		
+		
+		<section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-1125" name="ac-1125" type="checkbox" />
+      <label class="ac-label" for="ac-1125">Industry Institute Partnership Cell</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-2225" name="ac-2225" type="checkbox" />
+          <article class="ac-label">
+		    <img src="images/iipc.jpg">
+            <p>IIPC was established with the objective to IIPC reduce the gap between industry expectations (practice) and academic offerings (theory) by direct involvement of industry. We believe that quality human resource is the biggest asset of any industry and is the major source of development of any economy. Thus we endeavour to train our nation builders i.e. youth in the way the industry demands so that they are readily equipped by the industry. In this domain the strength of the institute lies in its qualified and experienced faculty, well equipped workshops and state of art infrastructure. The IIPC cell identifies the industrial needs by undertaking various studies on gap analysis. The students are then prepared according to the demand. Faculty of the group also keeps on interacting with industrial and equip themselves with latest practice and also helps the industry in solving their problems. Management of Universal Group also sponsors IIPC cell to the tune of 4-5 lakhs per annum. Following are the key activities performed by the IIPC *Industry-Institute Collaborations *Undertake gay analysis studies *Facilitates hands-on-practical training of students on the industry shop floors, units, fields etc. *Organising industry experts interaction sessions at campus and at industrial premises for the students and faculty. *Organising industrial visits in order to give exposure to students. *Organising brain storming sessions, seminars, symposiums, exhibitions and workshops. *Implementing joint research and development projects and consultancy projects.</p>
+          </article>
+        </div>
+        
+      </article>
+      
+      
+    </div>
+		
+		</section>
+		
+		
+		
+		<section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-1126" name="ac-1126" type="checkbox" />
+      <label class="ac-label" for="ac-1126">Entrepreneurship Development Cell</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-2226" name="ac-2226" type="checkbox" />
+          <article class="ac-label">
+		    <img src="images/edc.png">
+            <p>The Entrepreneurship Development Cell (EDC) is being promoted to develop institutional mechanism to create entrepreneural culture and to foster techno-entrepreneurship for generation of wealth and employment. UGI organizes Entrepreneurship Awareness Camps, Entrepreneurship Development Programmes and Skill Development Programmes in the college for the benefit of students. Entrepreneurship generates a large number of employment and income options with initially small capital investments and little sophisticated and managerial & technical skills.</p>
+          </article>
+        </div>
+        
+      </article>
+      
+      
+    </div>
+		
+		</section>
+		
+		
+		<section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-1127" name="ac-1127" type="checkbox" />
+      <label class="ac-label" for="ac-1127">Tally Solutions</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-2227" name="ac-2227" type="checkbox" />
+          <article class="ac-label">
+		    <img src="images/tally.png">
+            <p>Universal Group of Institutions (UGI) has tied up with Tally Solutions Private Limited to help educators professionally trained in Tally.ERP9 Multiuser Software. Tally education programs are designed to facilitate learning in a seamless manner and provide course completion Certificate.</p>
+          </article>
+        </div>
+        
+      </article>
+      
+      
+    </div>
+		
+		</section>
+		
+		
+		
+		
+		
+		<section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-1129" name="ac-1129" type="checkbox" />
+      <label class="ac-label" for="ac-1129">International Collaborations</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-2229" name="ac-2229" type="checkbox" />
+          <article class="ac-label">
+		    <img src="images/ic.jpg">
+            <p>Universal Group provides International exposures to its students and faculties through Students Exchange Programme, Faculty Exchange Programmes with various countries abroad. Recently i.e. on 28 September 2015, a group of 39 participants from 18 countries namely: Afghanistan, Botswana, Cambodia, Cuba, Cameroon, Ethiopia, Fiji, Ghana, Malawi, Nepal, Niger, Tanzania, Uganda, Nigeria, Palestine, Sri Lanka, Vietnam and Zimbabwe visited our campus for the international symposium on "Harnessing Cultural Diversities in Emerging Economies".</p>
+          </article>
+        </div>
+        
+      </article>
+      
+      
+    </div>
+		
+		</section>
+		
+		<section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-11212" name="ac-11212" type="checkbox" />
+      <label class="ac-label" for="ac-11212">Rockstar Academy</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-22212" name="ac-22212" type="checkbox" />
+          <article class="ac-label">
+		    <img src="images/rockstar.jpg">
+            <p>Universal Group has established Rock Star Academy for providing conducive and stress free study environment to the students. The reviews show that activities like aerobics, dance, music, acting etc. helps in developing creative thinking skills as well as helps in learning the value of discipline, commitment and work ethic. Self-confidence develops as young people overcome challenges to master new goals, learning to apply themselves and accomplish any task put before them. Further dance and music helps a child to understand relationships and learn to think with both sides of their brain. All these skills enhance a child’s academic performance, as well as their physical well-being. Moreover activities like dancing and aerobics keeps you fit! Much like team sports, dance for children can teach some invaluable and important lessons.</p>
+          </article>
+        </div>
+        
+      </article>
+      
+      
+    </div>
+		
+		</section>
+		
+            
+    </div>
+    
+ 
+  </div>
+   
+   </script> 
+	
+   
+   <script id="about-tpl" type="text/x-handlebars-template">   
+     <div class="wrapper">
+  
+  <div class="about-main">
+<div class="header-bar">
+<h1>About US</h1>
+<a class="back" href="#">
+<img src="images/back.png">
+</a>
+</div>
+
+    <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-1" name="ac-1" type="checkbox" />
+      <label class="ac-label" for="ac-1">About UGI</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-2" name="ac-2" type="checkbox" />
+          <article class="ac-label">
+            <p>Universal Group of Institutions (UGI), was established in 2009, by eminent academicians and educationists to provide quality education. Universal Group of Institutions offers various courses like <b>B.Tech, M.Tech, Polytechnic, MBA, BBA, BCA, ATHM, HMCT, B.Sc (Agriculture), B.Com, B.A, B.Sc (Nursing), ANM, GNM, M.Ed, B.Ed, ETT, LLB, B.A-LLB, B.A.M.S* and B.Pharmacy</b>. Located in the periphery of culturally rich community of Chandigarh & pollution free environment, UGI has world class infrastructure, best for its highly talented faculty, high achieving students and its outstanding placement records.</p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+    <!--/ac-->
+    
+     
+    <div class="ac">
+      <input class="ac-input" id="ac-3" name="ac-3" type="checkbox" />
+      <label class="ac-label" for="ac-3">Accreditations & Affiliations</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-4" name="ac-4" type="checkbox" />
+          <article class="ac-label" style="padding:0px;">
+		  
+		  <div class="admission-main-inner" style="width:100%;">
+		  
+		  <img src="images/affiliations.png"/>
+		
+		  </div>
+            
+          </article>
+		  
+		  </article>
+        </div>
+		
+		
+		<div class="ac">
+      <input class="ac-input" id="ac-3555" name="ac-3555" type="checkbox" />
+      <label class="ac-label" for="ac-3555">Accolades & Rankings</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-4555" name="ac-4555" type="checkbox" />
+          <article class="ac-label" style="padding:0px;">
+		  
+		  <div class="admission-main-inner" style="width:100%;">
+		  
+		  <img src="images/accolades_ranking.png"/>
+		
+		  </div>
+            
+          </article>
+		  
+		  </article>
+        </div>
+		
+		
+            
+    </div>
+    
+ 
+  </div>
+   
+   </script> 
+   
+   
+   <script id="institutions-tpl" type="text/x-handlebars-template">   
+	  
+	  <div class="wrapper">
+<div class="institute-main">
+<div class="header-bar">
+<h1>Institutions</h1>
+<a class="back" href="#">
+<img src="images/back.png">
+</a>
+</div>
+
+  <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-7" name="ac-7" type="checkbox" />
+      <label class="ac-label" for="ac-7">Universal Institute of Engineering and Technology</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-8" name="ac-8" type="checkbox" />
+          <article class="ac-label">
+            <p style="margin-bottom:15px;">Universal Institute of Engg. & Technology (UIET) is approved by AICTE and affiliated to Punjab Technical University, Jalandhar. UIET has highly qualified faculty, well equipped laboratories and acoustically designed class rooms which helps in making learning pleasure. UIET is providing B. Tech in different trades: - Civil, EE, ME, CSE & ECE.</p>
+          </article>
+        </div>
+        <div class="advisory-board1">
+  <!--h3>Courses Offered</h3-->
+  <!--h4>M. Tech</h4-->
+  <h3>M. Tech</h3>
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Computer Science & Engg.(CSE)</h5>
+  </div>
+  <div class="duration1">
+  <h5>2yrs.</h5>
+  </div>
+  </div>
+	   
+	   <div class="row">
+  <div class="course-offered1">
+  <h5>Elect. & comm. Engg.(ECE)</h5>
+  </div>
+  <div class="duration1">
+  <h5>2yrs.</h5>
+  </div>
+  </div>
+	
+	
+	   
+	   <div class="row">
+  <div class="course-offered1">
+  <h5>Mechanical Engg.(ME)</h5>
+  </div>
+  <div class="duration1">
+  <h5>2yrs.</h5>
+  </div>
+  </div>
+  
+      <div class="row">
+  <div class="course-offered1">
+  <h5>Civil Engg.(CE)</h5>
+  </div>
+  <div class="duration1">
+  <h5>2yrs.</h5>
+  </div>
+  </div>
+  
+  <div class="Eligibility Eligibility1">      
+     <h2>Eligibility Criteria For M.Tech:</h2>
+	 <p>B.Tech with 55% Marks or AMIE with at least 55% Marks.</p>
+	</div>
+  
+  <h3>B. Tech</h3>
+   <!--h4 style="margin-top:14px;">B. Tech</h4-->
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Mechanical Engg.(ME)</h5>
+  </div>
+  <div class="duration1">
+  <h5>4yrs.</h5>
+  </div>
+  </div>
+	   
+	   <div class="row">
+  <div class="course-offered1">
+  <h5>Civil Engg.(CE)</h5>
+  </div>
+  <div class="duration1">
+  <h5>4yrs.</h5>
+  </div>
+  </div>
+	
+	
+	   
+	   <div class="row">
+  <div class="course-offered1">
+  <h5>Elect. & comm. Engg.(ECE)</h5>
+  </div>
+  <div class="duration1">
+  <h5>4yrs.</h5>
+  </div>
+  </div>
+  
+      <div class="row">
+  <div class="course-offered1">
+  <h5>Computer Science & Engg.(CSE)</h5>
+  </div>
+  <div class="duration1">
+  <h5>4yrs.</h5>
+  </div>
+  </div>
+  
+   <div class="row">
+  <div class="course-offered1">
+  <h5>Electrical Engg.(EE)</h5>
+  </div>
+  <div class="duration1">
+  <h5>4yrs.</h5>
+  </div>
+  </div>
+  
+	   
+  </div>
+  </div>
+  
+    <div class="Eligibility Eligibility1">
+	 <h2>Eligibility Criteria For B.Tech</h2>
+	 <p>12th with Non-Medical</p>
+	 <p> (With Physics and Maths as Compulsory Subjects along with one of the following Subjects Chem.,Bio, Bio.Tech, Comp.Sci. Lateral Entry For Diploma in Engg. trade from PSBTE, Chandigarh or Sant Longowal Institute of Engg. & Technology, Longowal or such examination from any other recognised State board of technical education)</p>
+	</div>
+  
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+    
+  </section>
+  
+  
+  <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-9" name="ac-9" type="checkbox" />
+      <label class="ac-label" for="ac-9">Universal Business School</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-10" name="ac-10" type="checkbox" />
+          <article class="ac-label">
+            <p style="margin-bottom:15px;">Universal Business School (UBS) aims at creating leaders in the spheres of management and pursues excellence in every aspect of its activities to enable the students not only to make a name for them but also for their Institution and nation. UBS offers two year post graduate business management programme, affiliated to PTU and approved by AICTE. </p>
+			</article>
+			</div>
+					     <div class="advisory-board1">
+ 
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Master of Business Administration(MBA)</h5>
+  </div>
+  <div class="duration1">
+  <h5>2yrs.</h5>
+  </div>
+  </div>
+  
+  <div class="Eligibility Eligibility1">      
+  <h2>Eligibility Criteria For MBA:</h2>
+  <!--p>Graduation In any Stream</p-->
+  <p>Graduation in any stream </p>
+	</div>
+  
+     
+	   </div>
+      </article>
+            
+    </div>
+    
+  </section>
+  
+  
+  
+  
+   <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-11" name="ac-11" type="checkbox" />
+      <label class="ac-label" for="ac-11">Universal Institute Of Management And Technology</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-12" name="ac-12" type="checkbox" />
+          <article class="ac-label">
+            <p>UIMT owing to its exceptional track record is synonymous with excellence in all spheres of 
+
+operations, has been gaining in strength & admiration over the years and is affiliated to Punjab 
+
+Technical University, Jalandhar.</p>
+<p>The BBA programme is a full-time, three-year graduation programme, which aims at
+
+transforming a student into a corporate personality.</p>
+          </article>
+        </div>
+        <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Bachelor Of Business Administration(BBA)</h5>
+  </div>
+  <div class="duration1">
+  <h5>3yrs.</h5>
+  </div>
+  </div>
+	   
+	   <div class="row">
+  <div class="course-offered1">
+  <h5>Bachelor Of Computer Applications(BCA)</h5>
+  </div>
+  <div class="duration1">
+  <h5>3yrs.</h5>
+  </div>
+  </div>
+  
+  <div class="Eligibility">
+  <h2>Eligibility Criteria For BBA:</h2>
+
+    <p>10+2 in any stream.</p>
+	</div>
+
+
+
+ <div class="Eligibility"><h2>Eligibility Criteria For BCA:</h2>
+
+    <p>10+2 or equivalent degree in any stream </p>
+	</div>
+
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+    
+  </section>
+  
+  
+  
+   <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-13" name="ac-13" type="checkbox" />
+      <label class="ac-label" for="ac-13">Universal Polytechnic College</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-14" name="ac-14" type="checkbox" />
+          <article class="ac-label">
+            <p style="margin-bottom:15px;">
+			Universal Polytechnic College, Lalru (Mohali) affiliated to PSBTE and has been set up with the idea of not just imparting technical know-how with hands-on training to the students after Matric but also for providing them with personal, social and moral growth, thus providing them with a competitive edge in this era of look-alike institutes.</p>
+          </article>
+        </div>
+        <div class="advisory-board1">
+  <h3>Courses Offered</h3>
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Mechanical Engg.(ME)</h5>
+  </div>
+  <div class="duration1">
+  <h5>3yrs.</h5>
+  </div>
+  </div>
+	   
+	   <div class="row">
+  <div class="course-offered1">
+  <h5>Civil Engg.(CE)</h5>
+  </div>
+  <div class="duration1">
+  <h5>3yrs.</h5>
+  </div>
+  </div>
+	
+	
+	   
+	   <div class="row">
+  <div class="course-offered1">
+  <h5>Eletc. & comm. Engg.(ECE)</h5>
+  </div>
+  <div class="duration1">
+  <h5>3yrs.</h5>
+  </div>
+  </div>
+  
+      <div class="row">
+  <div class="course-offered1">
+  <h5>Computer Science & Engg.(CSE)</h5>
+  </div>
+  <div class="duration1">
+  <h5>3yrs.</h5>
+  </div>
+  </div>
+  
+    <div class="row">
+  <div class="course-offered1">
+  <h5>Electrical Engg.(EE)</h5>
+  </div>
+  <div class="duration1">
+  <h5>3yrs.</h5>
+  </div>
+  </div>
+  
+
+  </div>
+  
+    <div class="Eligibility">
+     <h2>Eligibility Criteria For Diploma:</h2>
+	 <p>10th with Maths, Science and English as compulsory subjects.</p>
+	</div>
+  
+      </article>
+      
+    </div>
+    
+  </section>
+  
+  
+
+ 
+  
+  
+    <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-2111" name="ac-2111" type="checkbox" />
+      <label class="ac-label" for="ac-2111">Universal Ayurvedic College and Hospital</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-2211" name="ac-2211" type="checkbox" />
+          <article class="ac-label">
+            <p style="margin-bottom:15px;">Universal Ayurvedic College and Hospital Provides Bachelor of Ayurvedic Medicine and Surgery (BAMS). Ayurveda is one of the oldest forms of medicine available today.Ayurveda helps to live a life full of happiness and health. Other forms of medicine see treatment as the only solution for wellness but Ayurveda believes in not only treating the symptoms of any disease but provide solutions for the overall well being.
+			</p>
+          </article>
+        </div>
+		 <div class="advisory-board1">
+		 <h3>Courses Offered</h3>
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1" style="height:11px;">
+  <h5>Ayurvedic Medicine and Surgery (BAMS)</h5>
+  </div>
+  <div class="duration1" style="height:11px;">
+  <h5>5 Years 6 Months</h5>
+  </div>
+  </div>
+  
+  
+  </div>
+  
+  
+  <div class="Eligibility">
+     <h2>Eligibility Criteria For BAMS:</h2>
+     <p>12 th Medical & Appear in GRAU Entrance Exam</p>
+	</div>
+	
+  
+  </div>
+     
+      </article>
+           
+    
+    
+  </section>
+
+
+
+  
+
+  
+  
+  
+  <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-211" name="ac-211" type="checkbox" />
+      <label class="ac-label" for="ac-211">Universal Institute of Pharmacy</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-221" name="ac-221" type="checkbox" />
+          <article class="ac-label">
+            <p style="margin-bottom:15px;">Universal Institute of Pharmacy has rechristened the profession of pharmacy with its professional approach and unique style. The mosaic of work crafted for the department helps students fit in easily into the top industries/institutions and in various Indian and pharma MNC Companies like Ranbaxy, Panaceabiotech, GlaxoSmithkline, Pfizer, Dr. Reddy’s and many more. The institute carries a unique distinction of being one of the first institutes of this field in local area. Well equipped college classrooms, labs and other research facilities helps students imbibe the skills needed for being successful in the field. It is well-managed institute with dynamic innovative focus to meet the need of the students.</p>
+          </article>
+        </div>
+		 <div class="advisory-board1">
+		 <h3>Courses Offered</h3>
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1" style="height:11px;">
+  <h5>B.Pharmacy</h5>
+  </div>
+  <div class="duration1" style="height:11px;">
+  <h5>4Yrs</h5>
+  </div>
+  </div>
+  
+  </div>
+  
+  
+  <div class="Eligibility">
+     <h2>Eligibility Criteria For B.Pharmacy:</h2>
+     <p>1) Candidate should have passed 10+2 with Physics, Chemistry, Maths (PCM) or Physics, Chemistry,
+Biology (PCB) or Physics, Chemistry, Maths & Biology as subjects. One must also pass with at least
+50%marks in Pre University course with biology/mathematics as one of the subjects, or complete a
+D.Pharmacy( Diploma in Pharmacy).</p>
+
+<p>&nbsp;</p>
+
+<p>2) Direct second Year Bachelor of Pharmacy (Lateral Entry) if one has aggregate of 50% marks in
+D.Pharmacy Examination with Physics, Chemistry and Biology (Botany & Zoology) or mathematics.</p>
+	</div>
+  
+  </div>
+     
+      </article>
+           
+    
+    
+  </section>
+  
+  
+  
+  <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-21" name="ac-21" type="checkbox" />
+      <label class="ac-label" for="ac-21">Universal Institute of Nursing</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-22" name="ac-22" type="checkbox" />
+          <article class="ac-label">
+            <p style="margin-bottom:15px;">Nursing is a profession focused on assisting individuals, families, and communities in attaining, re-attaining, and maintaining optimal health and functioning. Universal Institute of Nursing, Lalru, Mohali is approved by Indian Nursing Council and provides A.N.M. (Auxiliary Nursing Midwifery).<!-- & G.N.M. (General Nursing Midwifery).--></p>
+          </article>
+        </div>
+		 <div class="advisory-board1">
+		 <h3>Courses Offered</h3>
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <!--div class="row">
+  <div class="course-offered1" style="height:11px;">
+  <h5>GNM</h5>
+  </div>
+  <div class="duration1" style="height:11px;">
+  <h5>3<sup>1/2</sup> Yrs</h5>
+  </div>
+  </div-->
+  
+      <div class="row">
+  <div class="course-offered1" style="height:11px;">
+  <h5>ANM</h5>
+  </div>
+  <div class="duration1" style="height:11px;">
+  <h5>1<sup>1/2</sup> Yrs</h5>
+  </div>
+  </div>
+  
+  </div>
+  
+  
+  <!--div class="Eligibility">
+     <h2>Eligibility Criteria For GNM:</h2>
+     <p> 12th in Science(Medical/Non-medical)</p>
+	</div-->
+	
+	<div class="Eligibility">
+     <h2>Eligibility Criteria For ANM:</h2>
+     <p> 12th in any stream.</p>
+	</div>
+  
+  </div>
+     
+      </article>
+           
+    
+    
+  </section>
+  
+  
+  
+  <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-2111" name="ac-2111" type="checkbox" />
+      <label class="ac-label" for="ac-2111">Universal Law College</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-2211" name="ac-2211" type="checkbox" />
+          <article class="ac-label">
+            <p style="margin-bottom:15px;">Universal Law College provides many opportunities for lawyers, policymakers and related professionals. Education lawmakers and policymakers may advocate for fairness in education, poor and underprivileged students, students with disabilities and other special cases. They may create laws to eliminate gender or cultural bias in standardized testing, classroom learning, class projects and other assignments.</p>
+          </article>
+        </div>
+		 <div class="advisory-board1">
+		 <h3>Courses Offered</h3>
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1" style="height:11px;">
+  <h5>B.A LLB</h5>
+  </div>
+  <div class="duration1" style="height:11px;">
+  <h5>5 Yrs (Integrated Course)</h5>
+  </div>
+  </div>
+  
+  <div class="row">
+  <div class="course-offered1" style="height:11px;">
+  <h5>LLB</h5>
+  </div>
+  <div class="duration1" style="height:11px;">
+  <h5>3 Yrs</h5>
+  </div>
+  </div>
+  
+  </div>
+  
+  
+  <div class="Eligibility">
+     <h2>Eligibility Criteria For B.A LLB:</h2>
+     <p>45% aggregate in 12th.</p>
+	</div>
+	
+	<div class="Eligibility">
+     <h2>Eligibility Criteria For LLB:</h2>
+     <p>45% aggregate in Bachelors.</p>
+	</div>
+  
+  </div>
+     
+      </article>
+           
+    
+    
+  </section>
+
+  
+  <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-19" name="ac-19" type="checkbox" />
+      <label class="ac-label" for="ac-19">Universal College (Academic College)</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-20" name="ac-20" type="checkbox" />
+          <article class="ac-label">
+            <p style="margin-bottom:15px;">Universal College(Academic College) is affiliated to Punjabi University, Patiala and it aims to provide an ambience in a local setting with innovative and engaging teaching methods, globally bench-marked curricula, well qualified faculty, and key partnerships in research. It offers  B.Sc (Agriculture), B.A. and B.Com.</p> 
+			
+          </article>
+        </div>
+        <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+  <!--div class="row">
+  <div class="course-offered1">
+  <h5>M.Sc(Chemistry, Botany)</h5>
+  </div>
+  <div class="duration1">
+  <h5>2yrs.</h5>
+  </div>
+  
+  </div-->
+  
+  <div class="row">
+  <div class="course-offered1">
+  <h5>B.Sc(Agriculture)</h5>
+  </div>
+  <div class="duration1">
+  <h5>4yrs.</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>BA</h5>
+  </div>
+  <div class="duration1">
+  <h5>3yrs.</h5>
+  </div>
+  
+  </div>
+	   
+	   
+	
+	
+	   
+	   <div class="row">
+  <div class="course-offered1">
+  <h5>B.Com</h5>
+  </div>
+  <div class="duration1">
+  <h5>3yrs.</h5>
+  </div>
+  </div>
+  
+      
+  </div>
+  
+  <!--div class="Eligibility">
+     <h2>Eligibility Criteria For M.Sc:</h2>
+     <p>B.Sc in relevant stream. </p>
+	</div-->
+	
+	<div class="Eligibility">
+     <h2>Eligibility Criteria For B.Sc(Agriculture):</h2>
+     <p>45% Aggregate in 12th <br/>(Medical/Non-Medical)</p>
+	</div>
+  
+    <div class="Eligibility">
+     <h2>Eligibility Criteria For B.A:</h2>
+     <p>12th in any stream. </p>
+	</div>
+	
+	
+	
+	<div class="Eligibility">
+     <h2>Eligibility Criteria For B.Com:</h2>
+     <p>40% in 12th commerce or 45% in 12th humanities or 50% in any other stream.</p>
+	</div>
+  
+  </div>
+      </article>
+            
+    </div>
+    
+  </section>
+  
+  
+  <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-15" name="ac-15" type="checkbox" />
+      <label class="ac-label" for="ac-15">Universal College of Education</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-16" name="ac-16" type="checkbox" />
+          <article class="ac-label">
+		  <p style="margin-bottom:15px;">Universal College of Education has been 
+
+established with a view of training and educating future teachers and is affiliated to Punjabi 
+
+University, Patiala. Teachers shape the future of the nation and we prepare teachers who excel and uphold this 
+
+vision.</p>	
+          </article>
+        </div>  
+		
+		
+		
+		<div class="advisory-board1">
+  <h3>Courses Offered</h3>
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>ETT</h5>
+  </div>
+  <div class="duration1">
+  <h5>2yrs.</h5>
+  </div>
+  </div>
+	   
+	   <div class="row">
+  <div class="course-offered1">
+  <h5>B.Ed</h5>
+  </div>
+  <div class="duration1">
+  <h5>2yrs.</h5>
+  </div>
+  </div>
+	   
+  </div>
+  
+    <div class="Eligibility">
+     <h2>Eligibility Criteria For ETT:</h2>
+     <p>12th in any stream.</p>
+	</div>
+	
+	<div class="Eligibility">
+     <h2>Eligibility Criteria For B.Ed:</h2>
+     <p>Graduation in any stream.</p>
+	</div>
+  
+      
+      
+    </div>
+      
+	  </article>
+	  
+    </div>
+    
+  </section>
+  
+  
+  
+  <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-17" name="ac-17" type="checkbox" />
+      <label class="ac-label" for="ac-17">New Universal College Of Education </label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-18" name="ac-18" type="checkbox" />
+          <article class="ac-label">
+            <p style="margin-bottom:15px;">"New Universal College of Education" is affiliated to Punjabi 
+
+University, Patiala & its objective is to make quality education accessible to all. The institution has created an 
+
+environment and ambience that fosters learning, as it provides the students with opportunities to 
+
+explore and grow, through situations that challenge them to identify their strengths and reinforce 
+
+them.</p>
+          </article>
+        </div>
+		
+		<div class="advisory-board1">
+  <h3>Courses Offered</h3>
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>ETT</h5>
+  </div>
+  <div class="duration1">
+  <h5>2yrs.</h5>
+  </div>
+  </div>
+	   
+  </div>
+  
+    <div class="Eligibility">
+     <h2>Eligibility Criteria For ETT:</h2>
+     <p>12th in any stream.</p>
+	</div>
+     
+    </div>
+         
+      </article>
+      
+    </div>
+    
+  </section>
+  
+  
+  
+  
+  
+<section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-23" name="ac-23" type="checkbox" />
+      <label class="ac-label" for="ac-23">Divya Shiksha Gurukul College Of Education </label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-24" name="ac-24" type="checkbox" />
+          <article class="ac-label">
+            <p style="margin-bottom:15px;">Divya Shiksha Gurukul College of Education was established in 2005 to promote women 
+
+education in rural areas and is affiliated to Punjabi University, Patiala accredited with Grade ‘A’ by NAAC and is a member of CII. Integrating value education with formal education and social work is the main objective of the college. The ultimate aim of the college is to impart knowledge through well qualified faculty, excellent academic delivery and vast practical exposure.</p>
+          </article>
+        </div>
+		
+		<div class="advisory-board1">
+  <h3>Courses Offered</h3>
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Courses offered</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>M.Ed</h5>
+  </div>
+  <div class="duration1">
+  <h5>2yrs.</h5>
+  </div>
+  </div>
+  
+   <div class="row">
+  <div class="course-offered1">
+  <h5>B.Ed</h5>
+  </div>
+  <div class="duration1">
+  <h5>2yrs.</h5>
+  </div>
+  </div>
+	   
+  </div>
+  
+    <div class="Eligibility">
+     <h2>Eligibility Criteria For M.Ed:</h2>
+     <p>B.Ed degree in any stream</p>
+	</div>
+	
+	<div class="Eligibility">
+     <h2>Eligibility Criteria For B.Ed:</h2>
+     <p>Graduation in any Stream</p>
+	</div>
+     
+    </div>
+       
+      </article>  
+</div>	  
+    </div>
+    
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+</div>
+	
+	</script> 
+   <script id="courses-tpl" type="text/x-handlebars-template">  
+	<div class="wrapper">
+  
+  <div class="course-main">
+<div class="header-bar">
+<h1>Courses</h1>
+<a class="back" href="#">
+<img src="images/back.png">
+</a>
+</div>
+
+ 
+ <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-25" name="ac-25" type="checkbox" />
+      <label class="ac-label" for="ac-25">Diploma (After 10th)</label>
+      <article class="ac-text">
+	  
+	  <div class="ac">
+	  <input class="ac-input" id="ac-26" name="ac-26" type="checkbox" />
+	  <label class="ac-label ac-label2" for="ac-26">Diploma In Engineering</label>
+	    <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-27" name="ac-27" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-27">Civil Engg.(CE)</label>
+          <article class="ac-sub-text">
+		  <h3 style="margin-top:10px;">Civil Engineering.</h3>             
+<p>UPC has excellent facilities of Modern Laboratories which are well equipped with the latest equipment to carry out practicals like 3 phase Induction Motor,Star/Delta Stator,Voltmeter,Ammeter,Single Phase Ac Supply,Tube,Single/Double Column Material Specimens,Grinding Wheel,Heat Treatment Furnace,Pyrometer,Anometer,Model of Centrifugal Pump,Pyrometer, Air Compressor etc.</p>
+
+<p style="margin-top:10px; margin-bottom:8px;"><b>Laboratories:-</b></p>
+
+    <ul style="margin-left:15px;">
+	<li>Survey Stores</li>
+	<li>Material Testing Laboratory</li>
+	<li>Fluid Mechanics and Hydraulics Laboratory</li>
+	<li>Environmental Laboratory</li>
+	<li>CADD Laboratory which are being upgraded periodically, is equipped with software such as the Auto CAD Architectural Desktop and STAAD.</li>
+    <!--p style="margin-top:15px;">Survey Stores</p>
+    <p>Material Testing Laboratory</p>
+    <p>Fluid Mechanics and Hydraulics Laboratory</p>
+    <p>Environmental Laboratory</p>
+	<p>CADD Laboratory which are being upgraded periodically, is equipped with software such as the Auto CAD Architectural Desktop and STAAD.</p-->
+	</ul>
+
+    <div class="advisory-board1">
+		 
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Civil Engineering</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+  </div>
+  </div>
+ </article>
+        </div>
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-28" name="ac-28" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-28">Mechanical Engg.(ME)</label>
+          <article class="ac-sub-text">
+		   <h3 style="margin-top:10px;">Mechanical Engineering.</h3>
+            <p>Mechanical Engineering is the broadest, encompassing a wide variety of engineering fields and many specialities. Our goal for Diploma students is to give them a high quality engineering education that includes hands - on experience. Each of our faculty members is ready and willing to work in their fullest capacity with students on individual learning.</p>
+            			
+			<p style="margin-top:15px; margin-bottom:10px;"><b>Laboratories:-</b></p>
+    <ul style="margin-left:15px;">
+	<li><p>Fluid Mechanics Laboratory</p></li>
+	<li><p>Fluid Mechanics Laboratory</p></li>
+    <li><p>Heat Transfer Laboratory</p></li>
+    <li><p>Material Testing Laboratory</p></li>
+	<li><p>Thermodynamics Laboratory</p></li>
+	<li><p>Strength of Material Laboratory</p></li>
+	<li><p>Applied Mechanics Laboratory</p></li>
+	</ul>
+	
+	 <div class="advisory-board1">
+		   <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Mechanical Engg.</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+  
+  </div>
+  		</article>
+        </div>
+          
+ 
+ <div class="ac-sub">
+          <input class="ac-input" id="ac-29" name="ac-29" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-29">Elect. & Comm. Engg.(ECE)</label>
+          <article class="ac-sub-text">
+		  <h3 style="margin-top:10px;">Electronics & Communication Engineering</h3>
+            <p style="margin-top:10px; margin-bottom:5px;">Electronics & Communication Engineering is one of the latest branches of Engineering in modern era of technology. The department is well equipped and has advanced laboratories with sophisticated equipments, best suited in the present situation of communication field. It has various laboratories: </p>
+            <p style="font-weight:bold; margin-top:2px; margin-bottom:8px;">Laboratories:-</p>
+
+<ul style="margin-left:15px;">
+<li>
+    <p style="margin-top:15px;">Digital Electronics Laboratory</p></li>
+<li>    <p>Electronics Devices and Circuits Laboratory</p></li>
+<li>    <p>Microprocessor, Communication System Laboratory</p></li>
+<li>    <p>Microwave Laboratory</p></li>
+<li>	<p>Electronics & Instrumentation Laboratories Laboratory</p></li>
+	</ul>
+
+    <div class="advisory-board1">
+	  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Elect. & Comm. Engg.</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+  
+  </div>
+  </div>
+ </article>
+        </div>
+		
+		
+		 <div class="ac-sub">
+          <input class="ac-input" id="ac-30" name="ac-30" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-30">Computer Science & Engg.(CSE)</label>
+          <article class="ac-sub-text">
+		  <h3 style="margin-top:10px;">Computer Science & Engineering</h3>
+            <p style="margin-top:10px; margin-bottom:5px;">CSE Department offers Diploma in Computer Engineering to the students joining this course after Matric. The pre-eminence of the Department can be understood by the ever increasing demands of its fresh graduates. Close interaction with the industry has led to the evolution of a teaching system, which produces diligent and erudite engineers.</p>
+          
+    <p style="font-weight:bold; margin-top:2px; margin-bottom:8px;"><b>Laboratories:-</b></p>
+	<ul style="margin-left:15px;">
+	<li>
+    <p style="margin-top:15px;">Computer Science & Engg. Laboratories</p>
+	</li>
+<li>    <p>Data communication Laboratory</p></li>
+<li>    <p>Fundamentals of Computer Programming & Information Technology Laboratory</p></li>
+<li>    <p>Introduction to IT Laboratory</p></li>
+    </ul>
+    <div class="advisory-board1">
+
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Computer Science & Engineering</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+ </article>
+        </div>
+		
+		
+		
+		
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-31" name="ac-31" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-31">Electrical Engg.(EE)</label>
+          <article class="ac-sub-text">
+		   <h3 style="margin-top:10px;">Electrical Engineering</h3>
+            <p>Electrical engineering is considered to deal with the problems associated with large-scale electrical systems such as power transmission and motor control.Electrical Engineers provide energy solutions to light our homes, revolutionize the way we live, advance underwater communication technologies for monitoring/sensing oceanic environmental changes, use nanotechnology to produce better,design the technology that enables customized multimedia entertainment.</p>
+						
+			<p style="margin-top:10px; margin-bottom:8px;"><b>Laboratories:-</b></p>
+		<ul style="margin-left:15px;">
+<li>		
+    <p>Electrical machines</p></li>
+<li>    <p>Electrical Measurement</p></li>
+<li>    <p>Instrumentation and measuring devices</p></li>
+<li>    <p>Control system</p></li>
+<li>    <p>Electrical estimation and costing</p></li>
+<li>    <p>Power System</p></li>
+</ul>
+	
+	 <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Electrical Engineering</h5>
+  </div>
+  <div class="duration1">
+  <h5>4 Years</h5>
+  </div>
+  
+  </div>
+  		</article>
+        </div>
+		</div>
+		
+	
+          
+ 
+ 
+   <div class="ac">
+      <input class="ac-input" id="ac-32" name="ac-32" type="checkbox" />
+      <label class="ac-label" for="ac-32">ETT</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-33" name="ac-33" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">Elementary Teacher Training (ETT)</h3>
+          <p>Universal College of Education provides diploma in Elementary Teacher Training. ETT gives opportunity to those students who passed only 12th in any stream to become a primary teacher. Our teachers education curriculum has been designed to ensure that pre-service teachers develop the competencies required by proficient master teachers.</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Elementary Teacher Training</h5>
+  </div>
+  <div class="duration1">
+  <h5>2 Years</h5>
+  </div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+        
+  	
+	
+	
+   <div class="ac">
+      <input class="ac-input" id="ac-34" name="ac-34" type="checkbox" />
+      <label class="ac-label" for="ac-34">ANM</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-35" name="ac-35" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">Auxiliary Nursing & Midwifery (ANM)</h3>
+          <p>Universal Nursing College provides diploma in Auxiliary Nursing & Midwifery (ANM). Nurses who have completed the ANM course can work as primary health workers and midwife in primary health care centres that are spread throughout the length and breadth of the country.</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Auxiliary Nursing & Midwifery</h5>
+  </div>
+  <div class="duration1">
+  <h5>1.5 Years</h5>
+  </div>
+  
+  </div>
+		  
+		 <articale>
+		 </div> 
+          </article>
+        </div>
+		</div>
+        
+     
+ <div class="ac">
+      <input class="ac-input" id="ac-36" name="ac-36" type="checkbox" />
+      <label class="ac-label" for="ac-36">GNM</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-37" name="ac-37" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">General Nursing & Midwifery (GNM)</h3>
+          <p>Universal Nursing College provides diploma in General Nursing & Midwifery (GNM). Midwives are those nurses whose speciality is to take care of expecting mothers and provide assistance during childbirth. Our nursing institute has been contributing to the preparation of clinical nurse practitioners. Thus it is serving to promote health, prevent sickness and provides bed side care to the sick and suffering.</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>General Nursing & Midwifery</h5>
+  </div>
+  <div class="duration1">
+  <h5>3.5 Years</h5>
+  </div>
+  
+  </div>
+		  
+		  
+          </article>
+        </div>
+        
+      </article>
+      
+      </div>
+	  </div>
+	  
+  
+  </section>
+ 
+ 
+ <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-38" name="ac-38" type="checkbox" />
+      <label class="ac-label" for="ac-38">Undergraduate Programs (After 12th)</label>
+      <article class="ac-text">
+	  
+	  <div class="ac">
+	  <input class="ac-input" id="ac-39" name="ac-39" type="checkbox" />
+	  <label class="ac-label ac-label2" for="ac-39">B.Tech</label>
+	    <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-40" name="ac-40" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-40">Civil Engg.(CE)</label>
+          <article class="ac-sub-text">
+		  <h3 style="margin-top:10px;">Civil Engineering</h3>
+            <p style="margin-top:10px; margin-bottom:5px;">Department of Civil Engineering in UIET focuses on education in the areas of structural and environmental engineering. The departmental activities embrace planning, design, construction and management. The civil engineering department is equipped with all facilities of teaching and research activities related to pedagogical approach. </p>
+            <p style="font-weight:bold; margin-top:8px; margin-bottom:8px;"><b>Laboratories:-</b></p>
+
+			<ul style="margin-left:15px;">
+			<li>
+    <p style="margin-top:15px;">Survey Stores</p>
+	</li>
+	<li>
+    <p>Fluid mechanics laboratory</p></li>
+<li>    <p>Transportation laboratory</p></li>
+<li>    <p>Environmental Laboratory and</p></li>
+<li>	<p>Concrete and soil testing laboratories</p></li>
+<li>	<p>Strength of materials laboratory</p></li>
+<li>    <p>Structural engineering laboratory</p></li>
+<li>    <p>Environmental engineering laboratory</p></li>
+	</ul>
+	
+    <div class="advisory-board1">
+		 
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Civil Engineering</h5>
+  </div>
+  <div class="duration1">
+  <h5>4 Years</h5>
+  </div>
+  </div>
+  </div>
+ </article>
+        </div>
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-41" name="ac-41" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-41">Mechanical Engg.(ME)</label>
+          <article class="ac-sub-text">
+		   <h3 style="margin-top:10px;">Mechanical Engineering</h3>
+            <p>Department of mechanical engineering is very well established for imparting education to the B.Tech students. The faculty members are well qualified, having vast experience in teaching and sufficient practical knowledge to elaborate their assignments of teaching and research.</p>
+            <p style="font-weight:bold; margin-top:8px; margin-bottom:2px;"><b>Laboratories:-</b></p>
+			<ul style="margin-left:15px;">
+			<li>
+			<p style="margin-top:10px;">Strength of Materials laboratory</p></li>
+<li>    <p>Theory of Machines laboratory</p></li>
+<li>    <p>Fluid Mechanics laboratory</p></li>
+<li>    <p>Heat Transfer laboratory</p></li>
+<li>	<p>Mechanical Measurement & Metrology laboratory</p></li>
+<li>	<p>Automobile Engg. laboratory</p></li>
+<li>	<p>Applied Thermodynamics laboratory</p></li>
+<li>	<p>Refrigeration and Air Conditioning laboratory</p></li>
+<li>    <p>CAD/CAM laboratory</p></li>
+</ul>
+	
+	 <div class="advisory-board1">
+		   <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Mechanical Engg.</h5>
+  </div>
+  <div class="duration1">
+  <h5>4 Years</h5>
+  </div>
+  
+  </div>
+  		</article>
+        </div>
+          
+ 
+ <div class="ac-sub">
+          <input class="ac-input" id="ac-42" name="ac-42" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-42">Elect. & Comm. Engg.(ECE)</label>
+          <article class="ac-sub-text">
+		  <h3 style="margin-top:10px;">Electronics & Communication Engineering</h3>
+            <p style="margin-top:10px; margin-bottom:5px;">The Electronics & Communication Engineering is a kaleidoscopically changing and ever evolving branch.Innovation, orientation and an ever expanding base serve as a firm foundation for the edifice of the latest development in the Department of Electronics & Communication Engineering.The Department makes ceaseless efforts to ensure that knowledge of the faculty is also updated regularly by arranging Seminars, FDPs in the college.</p>
+    <p style="font-weight:bold; margin-top:8px; margin-bottom:2px;"><b>Laboratories:-</b></p>     
+<ul style="margin-left:15px;">
+<li>
+    <p style="margin-top:15px;">Electronics Devices and Circuits laboratory</p></li>
+<li>    <p>Electronic Measurement &Instrumentation laboratory</p></li>
+<li>    <p>Analog Electronics laboratory</p></li>
+<li>    <p>Digital Electronics laboratory</p></li>
+<li>	<p>Control System laboratory</p></li>
+<li>    <p>Linear Integrated Circuits</p></li>
+<li>    <p>Digital Signal Processing laboratory</p></li>
+<li>    <p>Microwave Engineering</p></li>
+<li>    <p>Micro-Controller</p></li>
+<li>    <p>Microprocessor laboratory</p></li>
+
+	</ul>
+
+    <div class="advisory-board1">
+	  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Elect. & Comm. Engg.</h5>
+  </div>
+  <div class="duration1">
+  <h5>4 Years</h5>
+  </div>
+  
+  </div>
+  </div>
+ </article>
+        </div>
+		
+		
+		 <div class="ac-sub">
+          <input class="ac-input" id="ac-43" name="ac-43" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-43">Computer Science & Engg.(CSE)</label>
+          <article class="ac-sub-text">
+		  <h3 style="margin-top:10px;">Computer Science & Engineering</h3>
+            <p style="margin-top:10px; margin-bottom:5px;">The Department of Computer Science and Engineering has been established to cater the growing needs of computer science in IT industry. Department aims to provide students an overview of computing, an understanding of the concepts, principles and skills in their application and extension, and practical experience in applied computing.</p>  
+	
+	<p style="margin-top:15px; margin-bottom:8px; font-weight:bold;">Focus Areas:-</p>
+	<ul style="margin-left:15px;">
+	<li>
+	<p>Emphasis on live projects C++, JAVA, C#, VRML, XML etc.</p></li>
+<li>    <p>Extensive work experience on Unix, Linux and Window 2000 platforms.</p></li>
+<li>    <p>Exposure to new technologies like ATM Tech., neural network and expert system.</p></li>
+<li>    <p>Performance Tuning in Computer Networks.</p></li>
+<li>    <p>Imbibing scientific temperament and moral values.</p></li>
+<li>   <p>Emphasis on CISCO laboratories</p></li>
+	</ul>
+
+
+
+    <div class="advisory-board1">
+
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Computer Science & Engineering</h5>
+  </div>
+  <div class="duration1">
+  <h5>4 Years</h5>
+  </div>
+  
+  </div>
+  </div>
+ </article>
+        </div>
+		
+		
+		
+		
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-44" name="ac-44" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-44">Electrical Engg.(EE)</label>
+          <article class="ac-sub-text">
+		   <h3 style="margin-top:10px;">Electrical Engineering</h3>
+            <p>Electrical engineering is considered to deal with the problems associated with large-scale electrical systems such as power transmission and motor control.Electrical Engineers provide energy solutions to light our homes, revolutionize the way we live,use nanotechnology to produce better, faster, brighter, and stronger materials for solar cells and sensing devices, design the technology that enables customized multimedia entertainment.</p>
+						
+			<p style="margin-top:10px; margin-bottom:8px;"><b>Laboratories:-</b></p>
+			<ul style="margin-left:15px;">
+			<li>
+    <p>Electrical machines</p></li>
+<li>    <p>Electrical Measurement</p></li>
+<li>    <p>Instrumentation and measuring devices</p></li>
+<li>    <p>Control system</p></li>
+<li>    <p>Electrical estimation and costing</p></li>
+<li>    <p>Power System</p></li>
+</ul>
+	
+	 <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Electrical Engineering</h5>
+  </div>
+  <div class="duration1">
+  <h5>4 Years</h5>
+  </div>
+  
+  </div>
+  		</article>
+        </div>
+		</div>
+          
+ 
+ 
+ 
+        
+  	
+	
+	
+   <div class="ac">
+      <input class="ac-input" id="ac-47" name="ac-47" type="checkbox" />
+      <label class="ac-label" for="ac-47">BBA</strong></label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-48" name="ac-48" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">BBA</h3>
+          <p>The BBA programme is a full-time, three-year graduation programme, which aims at transforming a student into a corporate personality. This course with its intensive syllabus and a wide range of value addition modules would indeed enable the student to aspire for higher studies in premium business schools in India and abroad.</p>
+		 
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Bachelor of Business Administration</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+  
+  </div>
+		  
+			 </div> 
+          </article>
+        </div>
+		</div>
+		
+		
+		
+		<div class="ac">
+      <input class="ac-input" id="ac-70" name="ac-70" type="checkbox" />
+      <label class="ac-label" for="ac-70">BCA</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-71" name="ac-71" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">BCA</h3>
+          <p style="margin-top:10px;">The department of Computer Application & IT offers three year graduate level course to the students. Computer Application is becoming so prominent that it is changing every aspect of human life, trade, commerce, communication and global security. Considering the enormous importance being laid to IT sector, UIMT has introduced Bachelor of computer application course for the benefit of the students.</p>
+
+
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Bachelor of Computer Application</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+  
+  </div>
+		  
+		 		 </div> 
+          </article>
+        </div>
+		</div>
+		
+		
+		
+		<div class="ac">
+      <input class="ac-input" id="ac-72" name="ac-72" type="checkbox" />
+      <label class="ac-label" for="ac-72">B.Ed</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-73" name="ac-73" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">Bachelors in Education (B.Ed.)</h3>
+          <p> Universal College of Education provides B.Ed which is 2 year degree programme in teaching. B. Ed degree is must for getting into teaching profession at the school level. After B. Ed, students can pursue their Master in Education (M.Ed).</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Bachelors in Education</h5>
+  </div>
+  <div class="duration1">
+  <h5>2 Years</h5>
+  </div>
+  
+  </div>
+		  
+		 
+		 </div> 
+          
+        </div>
+		</article>
+		</div>
+		</div>
+		
+		
+		<div class="ac">
+      <input class="ac-input" id="ac-74" name="ac-74" type="checkbox" />
+      <label class="ac-label" for="ac-74">BA</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-75" name="ac-75" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">Bachelors in Arts (B.A.)</h3>
+          <p style="margin-bottom:5px; font-weight:bold;">Eligibility Criteria</p>
+          <p>35% in Senior Secondary(Any Stream)</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Bachelors in Arts</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+  
+  </div>
+		  
+		 
+		 </div> 
+           
+        </div>
+		</div>
+		</article>
+		</div>
+		
+		
+		
+		<div class="ac">
+      <input class="ac-input" id="ac-749" name="ac-749" type="checkbox" />
+      <label class="ac-label" for="ac-749">B.A-B.Ed</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-759" name="ac-759" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">B.A-B.Ed</h3>
+          <p>Universal College of Education provides B.A B.Ed combined programme in teaching. The minimum qualification required for entry into B.A B.Ed course is 10+2 in any stream. While students from arts stream are trained to teach subjects like history, civics, geography and languages. The students from science stream are trained to teach mathematics, physics, chemistry and biology. After B.A B.Ed, students can pursue Master in Education (M.Ed) in Indian universities.</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>B.A-B.Ed</h5>
+  </div>
+  <div class="duration1">
+  <h5>4 Years</h5>
+  </div>
+  
+  </div>
+		  
+		 
+		 </div> 
+           
+        </div>
+		</div>
+		</article>
+		</div>
+		
+		
+		
+		<div class="ac">
+      <input class="ac-input" id="ac-322" name="ac-322" type="checkbox" />
+      <label class="ac-label" for="ac-322">LLB</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-333" name="ac-333" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">LLB</h3>
+          <p>Universal Law College provides LLB which is 3 Years Course in law. Education lawmakers and policymakers may advocate for fairness in education, poor and underprivileged students, students with disabilities and other special cases.</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>LLB</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+		
+		
+		
+		<div class="ac">
+      <input class="ac-input" id="ac-720" name="ac-720" type="checkbox" />
+      <label class="ac-label" for="ac-720">B.A-LLB</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-730" name="ac-730" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">B.A-LLB</h3>
+          <p>Universal Law College provides B.A-LLB which is 5 Years (Integrated Course) in law. Universal Law College provides many opportunities for lawyers, policymakers and related professionals</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>B.A-LLB</h5>
+  </div>
+  <div class="duration1">
+  <h5>5 Yrs (Integrated Course)</h5>
+  </div>
+  
+  </div>
+		  
+		 
+		 </div> 
+          
+        </div>
+		</article>
+		</div>
+		</article>
+		</div>
+		
+		
+		
+
+		
+		
+		<div class="ac">
+      <input class="ac-input" id="ac-72022" name="ac-72022" type="checkbox" />
+      <label class="ac-label" for="ac-72022">B.Pharma</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-73022" name="ac-73022" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">B.Pharma</h3>
+          <p>Universal Institute of Pharmacy provides B.Pharmacy which is 4 Years Course in Pharma field and it has rechristened the profession of pharmacy with its professional approach and unique style.</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>B.Pharmacy</h5>
+  </div>
+  <div class="duration1">
+  <h5>4 Years</h5>
+  </div>
+  
+  </div>
+		  
+		 
+		 </div> 
+          
+        </div>
+		</article>
+		</div>
+		</article>
+		</div>
+		
+		
+		
+		<div class="ac">
+      <input class="ac-input" id="ac-76" name="ac-76" type="checkbox" />
+      <label class="ac-label" for="ac-76">B.Com</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-77" name="ac-77" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">Bachelors in Commerce (B.Com)</h3>
+          <p style="margin-bottom:5px; font-weight:bold;">Eligibility Criteria</p>
+          <p>40% In +2 Commerce, 45% In +2 Humanities, 50% In any other stream. </p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Bachelors in Commerce</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+  
+  </div>
+		  
+		 
+		 </div> 
+          </article>
+        </div>
+		</div>
+		
+		
+		
+		<!--div class="ac">
+      <input class="ac-input" id="ac-78" name="ac-78" type="checkbox" />
+      <label class="ac-label" for="ac-78">B.Sc.(Non-Medical)</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-79" name="ac-79" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">B.Sc.(Non-Medical)</h3>
+          <p style="margin-bottom:5px; font-weight:bold;">Eligibility Criteria</p>
+          <p>45% In +2(Science and Maths)</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>B.Sc.(Non-Medical)</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+  
+  </div>
+		  
+		 
+		 </div> 
+          </article>
+        </div>
+		</div-->
+		
+		
+		
+				<div class="ac">
+      <input class="ac-input" id="ac-7202" name="ac-7202" type="checkbox" />
+      <label class="ac-label" for="ac-7202">B.Com(Professional)</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-7302" name="ac-7302" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">B.Com(Professional)</h3>
+          <p>Universal Institute of Management & Technology (UIMT) offers three year B.Com (Professional) programme, affiliated to PTU and approved by AICTE. UIMT remains in continuous touch with the industry for overall development of the management students. The students interact with the corporate world at frequent intervals to imbibe the corporate culture and norms. UIMT offer the latest technology and improved teaching space in bright, modern class rooms, and practical workshops. The hi-tech area has extensive IT facilities and library contains wide range of books and journals.</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>B.Com(Professional)</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+  
+  </div>
+		  
+		 
+		 </div> 
+          
+        </div>
+		</article>
+		</div>
+		</article>
+		</div>
+		
+		
+		
+		
+        
+     
+ <div class="ac">
+      <input class="ac-input" id="ac-80" name="ac-80" type="checkbox" />
+      <label class="ac-label" for="ac-80">B.Sc(Agriculture)</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-81" name="ac-81" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">B.Sc.(Agriculture)</h3>
+          <p style="margin-bottom:5px; font-weight:bold;">Eligibility Criteria</p>
+          <p>45% Aggregate in Science(+2 Medical/ Non-Medical)</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>B.Sc.(Agriculture)</h5>
+  </div>
+  <div class="duration1">
+  <h5>4 Years</h5>
+  </div>
+  
+  </div>
+		  
+		  
+          </article>
+        </div>
+		</div>
+        	  
+	  
+	  
+	  
+	  <div class="ac">
+      <input class="ac-input" id="ac-804" name="ac-804" type="checkbox" />
+      <label class="ac-label" for="ac-804">B.Sc(ATHM)</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-814" name="ac-814" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">B.Sc(ATHM)</h3>
+          <p style="margin-bottom:5px; font-weight:bold;">Eligibility Criteria</p>
+          <p>10+2 in any stream</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>B.Sc(ATHM)</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+  
+  </div>
+		  
+		  
+          </article>
+        </div>
+		</div>
+        
+      <!--/article>
+	  
+	  
+	  </div-->
+	  
+	  
+	  
+	   <div class="ac">
+      <input class="ac-input" id="ac-8045" name="ac-8045" type="checkbox" />
+      <label class="ac-label" for="ac-8045">B.Sc(HMCT)</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-8145" name="ac-8145" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">B.Sc(HMCT)</h3>
+          <p>Universal Institute of Management & Technology (UIMT) offers three year B.Sc. in Hotel Management and Catering Technology (HMCT) programme, affiliated to PTU and approved by AICTE. Department is equipped with all facilities of teaching and practical activities related to pedagogical approach. The students imbibes theoretical concepts in classrooms, while practical exposure is ensured though hands on experience in the labs and guest lectures by experts from industry.</p>
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>B.Sc(HMCT)</h5>
+  </div>
+  <div class="duration1">
+  <h5>3 Years</h5>
+  </div>
+  
+  </div>
+		  
+		  
+          </article>
+        </div>
+		</div>
+        
+      </article>
+	  
+	  
+	  </div>
+	  
+          
+	 
+	  </section>
+
+
+<section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-82" name="ac-82" type="checkbox" />
+      <label class="ac-label" for="ac-82">Post Graduate Programs (After Graduation)</label>
+      <article class="ac-text">
+	  
+	  <div class="ac">
+	  <input class="ac-input" id="ac-83" name="ac-83" type="checkbox" />
+	  <label class="ac-label ac-label2" for="ac-83">M.Tech</label>
+	    <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-84" name="ac-84" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-84">Computer Science & Engg(CSE)</label>
+          <article class="ac-sub-text">
+		  <h3 style="margin-top:10px;">Computer Science & Engineering</h3>
+            <p style="margin-top:10px; margin-bottom:5px;">The Department of Computer Science & Engineering provides M. Tech in Computer Science & Engineering which is approved by AICTE and affiliated to PTU, Jalandhar. CSE department aims to produce computing professionals with analytical and logical skills along with knowledge in a wide range of computing areas like Soft Computing, Artificial Intelligence, Computer Graphics and Vision, Multimedia and Networking.</p>
+			
+    <div class="advisory-board1">
+		 <h3>Courses Offered</h3>
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Computer Science and Engineering</h5>
+  </div>
+  <div class="duration1">
+  <h5>2 Years</h5>
+  </div>
+  </div>
+  </div>
+ </article>
+        </div>
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-85" name="ac-85" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-85"> Elect. & Comm. Engg.(ECE)</label>
+          <article class="ac-sub-text">
+		   <h3 style="margin-top:10px; margin-bottom:10px;">Electronics & Communication Engineering</h3>
+            <p>The Department of Electronics & Communication Engineering provides M. Tech in ECE which is approved by AICTE and affiliated to PTU, Jalandhar. Electronics and Communication Engineering is an interdisciplinary subject and covers Electronics, Communication, Instrumentation, IT and Computers. As a discipline it finds applications in many areas, as Industrial automation, embedded system, DSP and Biomedical Equipments.</p>
+  
+
+	 <div class="advisory-board1">
+		   <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Elect. & Comm. Engg.</h5>
+  </div>
+  <div class="duration1">
+  <h5>2 Years</h5>
+  </div>
+  
+  </div>
+  		</article>
+        </div>
+          
+ 
+ <div class="ac-sub">
+          <input class="ac-input" id="ac-86" name="ac-86" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-86">Mechanical Engg.(ME)</label>
+          <article class="ac-sub-text">
+		  <h3 style="margin-top:10px;">Mechanical Engg.(ME)</h3>
+            <p style="margin-top:10px;">Department of mechanical engineering is very well established for imparting education to the M.Tech students. The faculty members are well qualified, having vast experience in teaching and sufficient practical knowledge to elaborate their assignments of teaching and research.</p>
+    
+    <div class="advisory-board1">
+	  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Mechanical Engineering</h5>
+  </div>
+  <div class="duration1">
+  <h5>2 Years</h5>
+  </div>
+  
+  </div>
+  </div>
+ </article>
+        </div>
+		
+		
+		 <div class="ac-sub">
+          <input class="ac-input" id="ac-87" name="ac-87" type="checkbox" />
+          <label class="ac-label ac-label2" for="ac-87">Civil Engg.(CE)</label>
+          <article class="ac-sub-text">
+		  <h3 style="margin-top:10px;">Civil Engineering</h3>
+            <p style="margin-top:10px; margin-bottom:5px;">Department of Civil Engineering in UIET focuses on education in the areas of structural and environmental
+engineering. The departmental activities embrace planning, design, construction and management. The civil engineering department is equipped with all facilities of teaching and research activities related to pedagogical approach. Learning of civil engineering works with newer methods have been a continuous process.</p>
+
+
+
+    <div class="advisory-board1">
+
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Civil Engineering</h5>
+  </div>
+  <div class="duration1">
+  <h5>2 Years</h5>
+  </div>
+  
+  </div>
+  </div>
+ </article>
+        </div>
+		
+		</div>
+          
+ 
+ 
+ 
+        
+  	
+	
+	
+   <div class="ac">
+      <input class="ac-input" id="ac-88" name="ac-88" type="checkbox" />
+      <label class="ac-label" for="ac-88">MBA</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-89" name="ac-89" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">MBA</h3>
+          <p> UBS offers two year post graduate business management programme, affiliated to PTU and approved by AICTE.UBS aims at creating leaders in the spheres of management and pursues excellence in every aspect of its activities to enable the students not only to make a name for themselves but also for their Institution and nation.</p>
+		  
+		  <p style="margin-top:10px; margin-bottom:5px; font-weight:bold;">Elective Specializations</p>
+		 
+         <p>Finance</p>
+       <p>Human Resource Management</p>
+ <p>Marketing</p>
+		 
+		  
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Master of Business Administration</h5>
+  </div>
+  <div class="duration1">
+  <h5>2 Years</h5>
+  </div>
+  
+  </div>
+		  
+		 <articale>
+		 </div> 
+          </article>
+        </div>
+		</div>
+		
+		
+		
+		<div class="ac">
+      <input class="ac-input" id="ac-90" name="ac-90" type="checkbox" />
+      <label class="ac-label" for="ac-90">M.Ed</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-91" name="ac-91" type="checkbox" />
+          <article class="ac-label">
+            <h3 style="margin-top:15px;">Masters in Education (M.Ed.)</h3>
+          <p>The Master of Education is a postgraduate academic degree in education aiming at producing educational administrators, supervisors, researchers etc. Programme includes curriculum and instruction, counselling, school psychology, and administration. The programme provides opportunities for students to get a wide exposure and extending their knowledge in understanding Education specializations.</p>
+		 
+		   <div class="advisory-board1">
+  <div class="course-offered-main">
+  <div class="row">
+  <div class="course-offered">
+  <h5>Course</h5>
+  </div>
+  <div class="duration">
+  <h5>Duration</h5>
+  </div>
+  
+  </div>
+  
+       <div class="row">
+  <div class="course-offered1">
+  <h5>Masters in Education</h5>
+  </div>
+  <div class="duration1">
+  <h5>2 Years</h5>
+  </div>
+  
+  </div>
+		  
+		 <articale>
+		 </div> 
+          </article>
+        </div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+	
+	 
+	  </section>
+</div>
+</div>
+
+
+
+
+
+
+  
+  
+   
+	</script> 
+	
+	<script id="enquiry-tpl" type="text/x-handlebars-template">  
+	
+	   <div class="wrapper1">
+     <div class="contact-main">
+     <div class="header-bar">
+<h1>Enquiry</h1>
+<a class="back" href="#">
+<img src="images/back.png">
+</a>
+</div>
+     
+     <div class="contact-main-inner">
+       
+<h2>Enquiry</h2>
+<form id="enquiry_form">
+<div class="row"><label>Name</label><input type="text" value="" id="name"></div>
+<div class="row"><label>Phone</label><input type="text" value="" id="phone"></div>
+<div class="row"><label>Email</label><input type="email" value="" id="email"></div>
+<div class="row"><label>Course</label>
+<select id="course">
+<option>M.Tech</option>
+<option>B.Tech</option>
+<option>Polytechnic</option>
+<option>MBA</option>
+<option>BBA</option>
+<option>BCA</option>
+<option>ATHM</option>
+<option>HMCT</option>
+<option>B.Com</option>
+<option>B.A</option>
+<option>B.A LLB</option>
+<option>LLB</option>
+<option>B.Pharma</option>
+<option>B.Sc(Agriculture)</option>
+<option>M.Ed</option>
+<option>B.Ed</option>
+<option>ETT</option>
+<option>ANM</option>
+</select></div>
+<div class="row"><label>Message</label><textarea id="message"></textarea></div>
+<div class="row"><label></label><input type="submit" value="Submit" id="enquiry_btn"></div>
+</form>
+
+     </div>
+     </div>
+	 </div>
+	
+	</script>
+	
+	<script id="contact-tpl" type="text/x-handlebars-template">  
+	  <div class="wrapper1">
+     <div class="contact-main">
+     <div class="header-bar">
+<h1>Contact US</h1>
+<a class="back" href="#">
+<img src="images/back.png">
+</a>
+</div>
+     
+     <div class="contact-main-inner">
+       
+<h2>Contact Us</h2>
+<form id="contact_form">
+<div class="row"><label>Name</label><input type="text" value="" id="name"></div>
+<div class="row"><label>Phone</label><input type="text" value="" id="phone"></div>
+<div class="row"><label>Email</label><input type="email" value="" id="email"></div>
+<div class="row"><label>Course</label>
+<select id="course">
+<option>M.Tech</option>
+<option>B.Tech</option>
+<option>Polytechnic</option>
+<option>MBA</option>
+<option>BBA</option>
+<option>BCA</option>
+<option>ATHM</option>
+<option>HMCT</option>
+<option>B.Com</option>
+<option>B.A</option>
+<option>B.A LLB</option>
+<option>LLB</option>
+<option>B.Pharma</option>
+<option>B.Sc(Agriculture)</option>
+<option>M.Ed</option>
+<option>B.Ed</option>
+<option>ETT</option>
+<option>ANM</option>
+</select></div>
+<div class="row"><label>Message</label><textarea id="message"></textarea></div>
+<div class="row"><label></label><input type="submit" value="Submit" id="contact_btn"></div>
+</form>
+<div class="row"><div class="ugi-campus">
+<h2>UGI Campus:</h2>
+<p> Universal Group of Institutions, Lalru
+<br>
+Chandigarh-Ambala Highway,
+<br>
+Tehsil:- Dera Bassi, Distt. Mohali-140501, PUNJAB
+<br>
+Toll Free No: 1800 419 0533
+<br>
+Ph: +91-92160-77002, +91-92160-77003 </p>
+</div>
+<div class="ugi-campus">
+<h2>Head Office:</h2>
+<p> #379, Sector 71, Mohali
+<br>
+Contact No.: 0172-2271000
+<br>
+Email ID: info@ugi.ac.in</p>
+</div></div>
+     
+     </div>
+     </div>
+	 </div>
+	
+	</script>
+	
+	<script id="achievements-tpl" type="text/x-handlebars-template">
+	<div class="wrapper">
+	<div class="achievements-main">
+	<div class="header-bar">
+<h1>Achievements</h1>
+<a class="back" href="#">
+<img src="images/back.png">
+</a>
+</div>
+<div class="achievements-main-inner">
+			  <div class="advisory-board">
+		   
+		  </div>
+		  
+		  <div class="board-members">
+		   <div class="board-members-left">
+		   <img src="images/20150409_105252.jpg">
+		   </div>
+		   <div class="board-members-right">
+		   <p>Best engineering College with Excellent Faculty and Pedagogy in Punjab in Asia Education Summit 2015</p>
+		   </div>
+		   </div>
+		   
+		   
+		   <div class="board-members">
+		   <div class="board-members-left">
+		   <img src="images/thailand.JPG">
+		   </div>
+		   <div class="board-members-right">
+		   <p>International Achievers Award for Education Excellence</p>
+		   </div>
+		   </div>
+		  
+		  
+		  
+		  
+		  <div class="board-members">
+		   <div class="board-members-left">
+		   <img src="images/cma12.jpg">
+		   </div>
+		   <div class="board-members-right">
+		   <p>Award For Excellence By Chandigarh Management Association</p>
+		   </div>
+		   </div>
+		  		  
+		  
+		  <div class="board-members">
+		   <div class="board-members-left">
+		   <img src="images/B-Schoo.jpg">
+		   </div>
+		   <div class="board-members-right">
+		   <p>B-School Campus Excellence Award by Discovery Education Media Private Limited</p>
+		   </div>
+		   </div>
+		 
+		  
+		  <div class="board-members">
+		   <div class="board-members-left">
+		   <img src="images/bschool.JPG">
+		   </div>
+		   <div class="board-members-right">
+		   <p>Ranked 12th in Beyond IIMs B School by Higher Education Review</p>
+		   </div>
+		   </div>
+		  
+		  
+		  <div class="board-members">
+		   <div class="board-members-left">
+		   <img src="images/Studentchapter.JPG">
+		   </div>
+		   <div class="board-members-right">
+		   <p>Students chapter in association with Institute of Engineers(India)</p>
+		   </div>
+		   </div>
+		   
+		   <div class="board-members">
+		   <div class="board-members-left">
+		   <img src="images/oneplanet.jpg"/>
+		   </div>
+		   <div class="board-members-right">
+		   <p>Best Engineering College for Academic Excellence & Placements by One Planet Research</p>
+		   </div>
+		   </div>
+		  
+		  
+		  <div class="board-members">
+		   <div class="board-members-left">
+		   <img src="images/logo-27.jpg"/>
+		   </div>
+		   <div class="board-members-right">
+		   <p>3 Star by World Education Foundation, UK</p>
+		   </div>
+		   </div>
+		   
+		   <div class="board-members">
+		   <div class="board-members-left">
+		   <img src="images/siliconindia.jpg">
+		   </div>
+		   <div class="board-members-right">
+		   <p>Ranked 5th in Top Emerging Colleges</p>
+		   </div>
+		   </div>
+		   
+		   <div class="board-members">
+		   <div class="board-members-left">
+		   <img src="images/IIT_Bombay_logo.JPG">
+		   </div>
+		   <div class="board-members-right">
+		   <p>Tie Up with IIT Bombay through STP</p>
+		   </div>
+		   </div>
+		  
+		  
+		  <div class="board-members">
+		   <div class="board-members-left">
+		   <img src="images/iqa.JPG">
+		   </div>
+		   <div class="board-members-right">
+		   <p>Partnership with Tata Consultancy Services</p>
+		   </div>
+		   </div>
+		   
+		   </div>
+		   </div>
+		   </div>
+		  
+	</script>
+	
+		<script id="infra-tpl" type="text/x-handlebars-template">
+		  <div class="wrapper">
+  
+  <div class="infrastructure-main">
+<div class="header-bar">
+<h1>Infrastructure</h1>
+<a class="back" href="#">
+<img src="images/back.png">
+</a>
+</div>
+
+    <section class="container">
+	
+	
+	<div class="ac">
+      <input class="ac-input" id="ac-531" name="ac-531" type="checkbox" />
+      <label class="ac-label" for="ac-531">Student Centre</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-541" name="ac-541" type="checkbox" />
+          <article class="ac-label">
+            <img src="images/student_center.JPG">
+            <p style="margin-top:5px;">It is not only home to various student clubs but also contains game room, TV room, Computer Room for recreational activities along with the information desk. The Information Desk provides information about the building, campus services, academic departments and administrative offices contacts. It is like your living room - with food, fireplace, games, fitness, clubs, athletics, flat-screen TVs and activities, meeting rooms, performance spaces and college services under one roof.</p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+	
+	
+	<div class="ac">
+      <input class="ac-input" id="ac-61" name="ac-61" type="checkbox" />
+      <label class="ac-label" for="ac-61">Cafeteria</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-62" name="ac-62" type="checkbox" />
+          <article class="ac-label">
+          <img src="images/cafeteria.JPG">
+            <p style="margin-top:5px;">Refreshment joints throughout history have always been the ideal centers all over the world where brilliant minds congregate and great concepts originate. It is also the place where diverse culture has created well organized spaces for refreshments. </p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+	
+	
+	
+	<div class="ac">
+      <input class="ac-input" id="ac-611" name="ac-611" type="checkbox" />
+      <label class="ac-label" for="ac-611">Ultra Modern Gymnasium</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-621" name="ac-621" type="checkbox" />
+          <article class="ac-label">
+          <img src="images/gym.JPG">
+            <p style="margin-top:5px;">A well equipped gymnasium for boys and girls has been separately constructed in the college campus. The gymnasium is fully equipped with modern and latest equipments. The instructors and trainers are engaged in training students and are available throughout the day in gymnasium.</p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+	
+	
+	<div class="ac">
+      <input class="ac-input" id="ac-59" name="ac-59" type="checkbox" />
+      <label class="ac-label" for="ac-59">Sports Complex</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-60" name="ac-60" type="checkbox" />
+          <article class="ac-label">
+          <img src="images/sport_new.jpg">
+            <p style="margin-top:5px;">UGI provides indoor and outdoor games facilities to the students for their overall development. Institute also provides opportunities to students to participate in Annual Intra and Inter College Tournaments </p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+	
+	<div class="ac">
+      <input class="ac-input" id="ac-5990" name="ac-5990" type="checkbox" />
+      <label class="ac-label" for="ac-5990">ATM</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-6000" name="ac-6000" type="checkbox" />
+          <article class="ac-label">
+          <img src="images/atm.jpg">
+            <p style="margin-top:5px;">Vijay Bank ATM machine is available on campus to avail banking facilities. Students can open an account with zero balance.</p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+	
+	
+	<div class="ac">
+      <input class="ac-input" id="ac-59901" name="ac-59901" type="checkbox" />
+      <label class="ac-label" for="ac-59901">Open Air Theatre</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-60001" name="ac-60001" type="checkbox" />
+          <article class="ac-label">
+          <img src="images/oat.jpg">
+            <p style="margin-top:5px;">This is an open air theatre for Cultural activities, Annual Functions, Youth Festivals and other programs in which group gathering may be required. The open air theatre has the capacity to accomodate around more than 500 students comfortably at a time. The facility of Open Air Theatre is utilised by the college widely to meet their requirements for their functions.</p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+	
+	
+	<div class="ac">
+      <input class="ac-input" id="ac-63" name="ac-63" type="checkbox" />
+      <label class="ac-label" for="ac-63">Health Centre</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-64" name="ac-64" type="checkbox" />
+          <article class="ac-label">
+          <img src="images/DSCF6383.JPG">
+            <p style="margin-top:5px;">The students are provided with immediate free medical attention in the campus through the services of qualified doctors. We have highly qualified person with plenty of experience and is kind in nature. All the first aid treatments for fever, headache and muscle pain are given as quickly as possible. </p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+    <!--/ac-->
+	
+	
+	<div class="ac">
+      <input class="ac-input" id="ac-599011" name="ac-599011" type="checkbox" />
+      <label class="ac-label" for="ac-599011">Yoga Centre</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-600011" name="ac-600011" type="checkbox" />
+          <article class="ac-label">
+          <img src="images/Yoga.jpg">
+            <p style="margin-top:5px;">The Yoga Centre is aimed towards the complete Health Management in the campus. The yoga sessions promote the physical, mental and spiritual being through balanced development of all the three. Meditative exercises recharge the body with cosmic energy and leads to both specific and non specific health benefits.</p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+	
+	
+	<div class="ac">
+      <input class="ac-input" id="ac-51" name="ac-51" type="checkbox" />
+      <label class="ac-label" for="ac-51">Wi-Fi Campus</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-52" name="ac-52" type="checkbox" />
+          <article class="ac-label">
+          <img src="images/wifi.JPG">
+            <p style="margin-top:5px;">Campus is having 7 MBPS of high speed internet facility. The institute has 24X7 Wi-Fi facility in the college campus for the student and faculty members to avail internet connection at any place in the college, hostel & faculty houses. The connectivity through a fully networked campus with state-of-the-art IT infrastructure, computing & communication resources, offers students the facilities of e-mail, net surfing, up/down loading of web based application, besides helping them in preparing projects & seminars. </p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+	
+	
+	<div class="ac">
+      <input class="ac-input" id="ac-53" name="ac-53" type="checkbox" />
+      <label class="ac-label" for="ac-53">Hostels</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-54" name="ac-54" type="checkbox" />
+          <article class="ac-label">
+          <img src="images/boyhostel.JPG">
+            <p style="margin-top:5px;">Excellent hostel with the best possible facilities are available for boys and girls separately as per the following details:</p>
+            <p style="margin-top:5px;">Well-furnished rooms</p>
+            <p style="margin-top:5px;">Clean homely environment</p>
+            <p style="margin-top:5px;">Indoor & Outdoor games facilities</p>
+            <p style="margin-top:5px;">Fresh hygienic food</p>
+            <p style="margin-top:5px;">Common room for students</p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+	
+	
+	<!--div class="ac">
+      <input class="ac-input" id="ac-5311" name="ac-5311" type="checkbox" />
+      <label class="ac-label" for="ac-5311">Mini Market</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-5411" name="ac-5411" type="checkbox" />
+          <article class="ac-label">
+            <img src="images/mini_market.JPG">
+            <p style="margin-top:5px;">The campus has a Mini market to cater the needs of students and faculty as well. The market is a network of Food Courts, Shops for Books and Stationary items, Apparels, Lifestyle Accessories, Sports Goods, Music and Entertainment, Beauty Parlour, Saloon, Gifts, Boutique and other related service areas. This makes the campus life more interesting.</p>
+          </article>
+        </div>
+        
+      </article>
+      
+      
+    </div-->
+	
+	
+    
+    
+    
+    
+    <div class="ac">
+      <input class="ac-input" id="ac-55" name="ac-55" type="checkbox" />
+      <label class="ac-label" for="ac-55">Central Library</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-56" name="ac-56" type="checkbox" />
+          <article class="ac-label">
+          <img src="images/library.JPG">
+            <p style="margin-top:5px;">The Institute has a well equipped central library which caters the needs of students and teachers. Library also includes large number of national and international periodicals. The library resource centre is fully automated and for this we have specialized user-friendly library software. The library has adopted latest information technologies like CD,DVD, Multimedia Kits, Bar-code Scanners, Text and Graphic Scanners. </p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+    
+    <div class="ac">
+      <input class="ac-input" id="ac-57" name="ac-57" type="checkbox" />
+      <label class="ac-label" for="ac-57">Transportation</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-58" name="ac-58" type="checkbox" />
+          <article class="ac-label">
+          <img src="images/transport_new.jpg">
+            <p>Fleet of buses maintained for conveyance from Chandigarh, Panchkula, Mohali, Patiala, Ambala and other important towns.</p>
+          </article>
+        </div>
+        
+      </article>
+      <!--/ac-text--> 
+      
+    </div>
+    
+    
+	
+	
+	
+	
+    
+    
+    
+    
+    
+     </section>
+   
+ 
+  </div>
+  </div>
+		</script>
+		
+	<script id="admission-tpl" type="text/x-handlebars-template">
+	  <div class="wrapper">
+  		<div class="admission-main">
+		<div class="header-bar">
+		<h1>Admission</h1>
+		<a class="back" href="#">
+		<img src="images/back.png">
+		</a>
+		</div>
+		
+<div class="admission-main-inner"> <!--style="width:100%;"-->
+		      <img src="images/courses-adm.jpg"/>
+		    </div>
+
+  <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-7" name="ac-7" type="checkbox" />
+      <label class="ac-label" for="ac-7">Eligibility</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-8" name="ac-8" type="checkbox" />
+          <article class="ac-label" style="padding:0px;">
+            <div class="admission-main-inner" style="width:100%;">
+		      <img src="images/admission.jpg"/>
+		    </div>
+          </article>
+        </div>  
+      </article>
+    </div>	  
+  </section>
+    
+	<section class="container">
+    <div class="ac" style="background:none;">
+      <input class="ac-input" id="ac-9" name="ac-9" type="checkbox" />
+      <label class="ac-label" for="ac-9">Apply Now</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-10" name="ac-10" type="checkbox" />
+          <article class="ac-label">
+            
+		      <div class="contact-main-inner">
+       
+<!--h2>Enquiry</h2-->
+<form>
+<div class="row"><label>Name</label><input type="text" value=""></div>
+<div class="row"><label>Phone</label><input type="text" value=""></div>
+<div class="row"><label>Email</label><input type="email" value=""></div>
+<div class="row"><label>Course</label><select>
+<option>M.Tech</option>
+<option>B.Tech</option>
+<option>Polytechnic</option>
+<option>MBA</option>
+<option>BBA</option>
+<option>BCA</option>
+<option>ATHM</option>
+<option>HMCT</option>
+<option>B.Com</option>
+<option>B.A</option>
+<option>B.A LLB</option>
+<option>LLB</option>
+<option>B.Pharma</option>
+<option>B.Sc(Agriculture)</option>
+<option>M.Ed</option>
+<option>B.Ed</option>
+<option>ETT</option>
+<option>ANM</option>
+</select></div>
+<div class="row"><label>Message</label><textarea></textarea></div>
+<div class="row"><label></label><input type="submit" value="Submit"></div>
+</form>
+
+     </div>
+		    
+          </article>
+        </div>  
+      </article>
+    </div>	  
+  </section>
+  
+ 	</div>
+	  </div>
+	  </div>
+	</script>
+	
+	<script id="scholarship-tpl" type="text/x-handlebars-template">
+	 <div class="wrapper">
+  		<div class="scholarship-main">
+		<div class="header-bar" style="margin:0px !important;">
+		<h1>Scholarship</h1>
+		<a class="back" href="#">
+		<img src="images/back.png">
+		</a>
+		</div>
+		 <div class="scholarship-main-inner" style="width:100% !important;">
+		  <img src="images/scholarship.jpg" id="sch_img"/>
+		 </div>
+		</div>
+	  </div>
+	</script>
+	
+	<script id="placement-tpl" type="text/x-handlebars-template">
+	 <div class="wrapper">
+  		<div class="admission-main">
+		<div class="header-bar">
+		<h1>Placements</h1>
+		<a class="back" href="#">
+		<img src="images/back.png">
+		</a>
+		</div>
+		
+		
+		
+		 <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-12112" name="ac-12112" type="checkbox" />
+      <label class="ac-label" for="ac-12112">Training</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-12312" name="ac-12312" type="checkbox" />
+          <article class="ac-label" style="padding:0px;">
+           <p>Content is coming soon......</p>  
+          </article>
+        </div>  
+      </article>
+    </div>	  
+  </section>
+		
+		
+		<section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-11" name="ac-11" type="checkbox" />
+      <label class="ac-label" for="ac-11">Placement Cell</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-12" name="ac-12" type="checkbox" />
+          <article class="ac-label">
+		  <img src="images/placementcell.png"/>
+              <p>Universal Group of Institutions has always given training, augmentation and placements an utmost priority and to implement it into action an exclusive training, augmentation and placement assistance cell (T&P) has been established with state of art facilities. The cell is headed by experienced professional from Industry.</p>
+			  <p>T&P Cell is responsible for conducting various activities in time bound schedules without violating the time table of university curriculum. Training and augmentation programmes run through entire course duration. These Programmes cater to the present and projected needs of the Industry in future. They include industry oriented modules of communication skills, personality development, aptitude, logical reasoning, foundation courses, workshops, online test, mock group discussion sessions to help students to get realistic feel.</p>
+         </article>
+        </div>  
+      </article>
+    </div>	  
+  </section>
+  
+  <section class="container">
+    <div class="ac">
+      <input class="ac-input" id="ac-121" name="ac-121" type="checkbox" />
+      <label class="ac-label" for="ac-121">Associated Recruiters</label>
+      <article class="ac-text">
+        <div class="ac-sub">
+          <input class="ac-input" id="ac-123" name="ac-123" type="checkbox" />
+          <article class="ac-label" style="padding:0px;">
+           <img src="images/aap-Recruiters.png"/>	  
+          </article>
+        </div>  
+      </article>
+    </div>	  
+  </section>
+		
+		</div>
+	  </div>
+	</script>
+	
+	<script id="prospectus-tpl" type="text/x-handlebars-template">
+	<div class="wrapper1">
+     <div class="contact-main">
+     <div class="header-bar">
+<h1>Prospectus</h1>
+<a class="back" href="#">
+<img src="images/back.png">
+</a>
+</div>
+     
+     <div class="contact-main-inner">
+       
+<h2>Get Prospectus</h2>
+<form id="prospectus_form">
+<div class="row"><label>Name</label><input type="text" value="" id="name"></div>
+<div class="row"><label>Phone</label><input type="text" value="" id="phone"></div>
+<div class="row"><label>Email</label><input type="email" value="" id="email"></div>
+<div class="row">
+<label>Course</label>
+<select id="course">
+<option>M.Tech</option>
+<option>B.Tech</option>
+<option>Polytechnic</option>
+<option>MBA</option>
+<option>BBA</option>
+<option>BCA</option>
+<option>ATHM</option>
+<option>HMCT</option>
+<option>B.Com</option>
+<option>B.A</option>
+<option>B.A LLB</option>
+<option>LLB</option>
+<option>B.Pharma</option>
+<option>B.Sc(Agriculture)</option>
+<option>M.Ed</option>
+<option>B.Ed</option>
+<option>ETT</option>
+<option>ANM</option>
+</select>
+</div>
+<div class="row"><label>Address</label><textarea id="address"></textarea></div>
+<div class="row"><label></label><input type="submit" value="Submit" id="prospectus_btn"></div>
+</form>
+
+     </div>
+     </div>
+	 </div>
+	</script>
+	
+	
+   <script src="cordova.js"></script>
+   <script src="js/jquery-1.10.2.min.js"></script> 
+   <script src="js/ajax.js"></script> 
+   <script src="js/functions.js"></script> 
+   <script src="js/handlebars.js"></script> 
+   <script src="js/bootstrap.js"></script> 
+   <script src="js/bootstrapValidator.min.js"></script> 
+   <script src="js/HomeView.js"></script> 
+   <script src="js/RouteView.js"></script> 
+   <script src="js/main.js"></script> 
+   <script src="js/storage/ls-store.js"></script>
+   <script src="fancybox/jquery.fancybox.js"></script>
+   <!--script src="js/sweetalert2.all.min.js"></script-->   
+   <script type="text/javascript">	
+	 $(function(){
+	   $.support.cors = true;
+	   app.initialize();		   
+	 });
+ 	</script>
+</body>
+</html>
