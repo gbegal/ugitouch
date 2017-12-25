@@ -164,6 +164,8 @@ function getContacts()
 		console.log(' i m after * fields');
         
 		navigator.contacts.find(fields, onSuccessContact, onErrorContact, options);
+		
+		console.log(' i m after navcontac fields');
 }
 
 function onSuccessContact(contacts)
