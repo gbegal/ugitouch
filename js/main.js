@@ -110,7 +110,7 @@ var app = {
 		
 		//$(".wrapper").css( { 'min-height': $(window).height() }, { queue: false, duration: 800 });
 		
-		getContacts();
+		//getContacts();
 		
 		//getLocation();
 		
