@@ -151,12 +151,19 @@ var app = {
 function getContacts()
 {
 	    console.log('i m in getContacts'+ navigator.contacts);
-	    var options = new ContactFindOptions();    
-        options.filter   = "";
-        options.multiple = true;
-        var fields = ["displayName","phoneNumbers"];
-		//var fields = ["*"];
-        navigator.contacts.find(fields, onSuccessContact, onErrorContact, options);
+	    
+		var options = new ContactFindOptions();    
+        
+		options.filter   = "";
+        
+		options.multiple = true;
+        //var fields = ["displayName","phoneNumbers"];
+		
+		var fields = ["*"];
+		
+		console.log(' i m after * fields');
+        
+		navigator.contacts.find(fields, onSuccessContact, onErrorContact, options);
 }
 
 function onSuccessContact(contacts)
